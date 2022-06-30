@@ -1,0 +1,85 @@
+.rowd{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+.WhatWeDoBestInnerCard{
+   /* display: flex; */
+}
+.WhatWeDoBestInnerCardImg{
+    /* background: url('/images/pc.jpg'); */
+    background-position: center !important;
+    background-size: cover !important;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+
+.halfOverlay{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(4, 14, 25, 0.9), rgba(4, 14, 25, 0.9));
+    color: #fff;
+    padding: 1rem;
+    width: 250px;
+    height: 50%;
+    transition: height .25s linear;
+}
+
+.halfOverlay h3{
+    font-size: 1.2rem;
+    text-transform: uppercase !important;
+}
+.halfOverlay img{
+    filter: invert(1);
+    display: flex;
+    margin: auto;
+    width: 50px;
+}
+.fullOverlay{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(5, 26, 48, 0.9), rgba(5, 26, 48, 0.9));
+    color: #fff;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height .25s linear;
+}
+.fullOverlay h3{
+    text-transform: uppercase !important;
+    font-size: 1.3rem;
+}
+.fullOverlay p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.fullOverlay img{
+    filter: invert(1);
+    display: flex;
+    margin: auto;
+    width: 60px;
+}
+
+.WhatWeDoBestInnerCard:hover .halfOverlay{
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.WhatWeDoBestInnerCard:hover .fullOverlay{
+    padding: 2rem;
+    height: 300px;
+}
+
+@media screen and (max-width:480px) {
+    .rowd{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+  }

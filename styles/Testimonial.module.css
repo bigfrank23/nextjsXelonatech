@@ -1,21 +1,3 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-  /* outline: 1px solid red; */
-}
-
 .carousel {
 	margin: 50px auto;
 }
@@ -39,23 +21,11 @@ a {
     border: 2px solid #fff;
 }
 .carousel .testimonial {
-  color: #fff;
-  position: relative;    
-  /* background: #9b9b9b; */
-  /* background: #e41112; */
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../public/images/heroImg/img3.png');
-  background-position: center;
-  background-size: cover;
+    color: #fff;
+    position: relative;    
+    background: #9b9b9b;
 	padding: 15px;
 	margin: 0 0 20px 20px;
-  height: 275px;
-  border-top-right-radius: 1rem;
-  cursor: pointer;
-  transition: border-left .25s ease;
-}
-.carousel .testimonial:hover {
-  border-left: 10px solid #666;
-  border-bottom-left-radius: 1rem;
 }
 .carousel .testimonial::before, .carousel .testimonial::after {
 	content: "";
@@ -85,9 +55,8 @@ a {
 }
 .carousel .testimonial p {
 	text-indent: 40px;
-  line-height: 21px;
+    line-height: 21px;
 	margin: 0;
-  font-size: .9rem;
 }
 .carousel .testimonial p::before {
 	content: "\201D";
