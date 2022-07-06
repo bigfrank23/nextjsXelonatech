@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import BlogIndex from '../components/blogIndex/BlogIndex'
+import CardIndex from '../components/card/CardIndex'
+import CardIndex2 from '../components/card/CardIndex2'
 import HeroBanner1 from '../components/heroBanner1/HeroBanner1'
 // import Image from 'next/image'
 import HeroSection from '../components/HeroSection'
@@ -23,7 +25,8 @@ export default function Home() {
       </Head>
       {/* <div className="container-fluid"> */}
         <HeroSection/>
-        <WhatWeDo />
+        <CardIndex />
+        <CardIndex2 />
         <HeroBanner1 />
         <WhatWeDoBest />
         <Testimonial />
