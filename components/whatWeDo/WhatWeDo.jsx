@@ -5,7 +5,7 @@ const WhatWeDo = () => {
     <div className="container mt-5">
         <div className="whatWeDoTitle mb-5">
             <h2 className="text-center">Why elonatech</h2>
-            <hr className="bg-secondary m-auto my-3" style={{width: '50px', height: "2px"}}/>
+            <hr className="m-auto my-3" style={{background: 'red', width: '50px', height: "2px"}}/>
             <h4 className="text-center text-secondary">Top-notch technology service providers</h4>
         </div>
         <div className="row gx-5 mb-3">

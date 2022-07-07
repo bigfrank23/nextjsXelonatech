@@ -8,7 +8,7 @@ const CardIndex = () => {
     <div className="container my-5">
       <div className="whatWeDoTitle mb-5">
             <h2 className="text-center">Why elonatech</h2>
-            <hr className="bg-secondary m-auto my-3" style={{width: '50px', height: "2px"}}/>
+            <hr className="m-auto my-3" style={{background: 'red', width: '50px', height: "2px"}}/>
             <h4 className="text-center text-secondary">Top-notch technology service providers</h4>
       </div>
         <Box
@@ -25,7 +25,7 @@ const CardIndex = () => {
             {/* <Box sx={{ gridArea: 'header', bgcolor: 'blue' }}>Header</Box> */}
 
             {/* 1st two box */}
-            <Box elevation={3} sx={{ 
+            <Box elevation={3} sx={{ borderTop: 'thin solid blue', 
               gridArea: 'main', transition: "background .5s ease", background: 'url("https://images.unsplash.com/photo-1592659762303-90081d34b277?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80")', backgroundPosition: 'center', backgroundSize: 'cover', borderRadius: '10px', p: '3rem',
               '&:hover': {background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1592659762303-90081d34b277?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80")',}
                }}>
@@ -39,7 +39,7 @@ const CardIndex = () => {
               </Box>
             </Box>
 
-            <Box elevation={3} sx={{ 
+            <Box elevation={3} sx={{ borderTop: 'thin solid yellow', 
               gridArea: 'sidebar', transition: "background .5s ease", background: 'url("https://images.unsplash.com/photo-1581089781785-603411fa81e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")', backgroundPosition: 'center', backgroundSize: 'cover', borderRadius: '10px', p: '3rem',
               '&:hover': {background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1581089781785-603411fa81e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")',}
                }}>
@@ -54,9 +54,9 @@ const CardIndex = () => {
             </Box>
 
                 {/* Last box */}
-            <Box elevation={3} sx={{ 
-              gridArea: 'footer', transition: "background .5s ease", background: 'url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80")', backgroundPosition: 'center', backgroundSize: 'cover', borderRadius: '10px', p: '5rem',
-              '&:hover': {background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80")',}
+            <Box elevation={3} sx={{ borderTop: 'thin solid red',
+              gridArea: 'footer', transition: "background .5s ease", background: 'url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")', backgroundPosition: 'center', backgroundSize: 'cover', borderRadius: '10px', p: '5rem',
+              '&:hover': {background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")',}
                }}>
               <Box sx={{p: '2rem', bgcolor: "rgba(0,0,0,0.5)", width: '500px', transition: "border .5s linear", '&:hover': {border: "1px solid #fff"}}}>
                 {/* <Item> */}

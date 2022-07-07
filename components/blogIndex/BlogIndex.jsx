@@ -42,54 +42,55 @@ export default function BlogIndex() {
     },
   ]
   return (
-    <div className="container my-5">
-      <h3 className="text-center">Recent blog</h3>
-        <hr className='bg-secondary m-auto my-3' style={{width: "50px", height: "2px"}} />
-      <Grid 
-        container
-        spacing={2}>
-        {items.map((item, i)=> (
-          <Grid item xs={12} sm={6} md={4} key={i}>
-            <Card sx={{ maxWidth: 345 }} elevation={5}>
-              <CardHeader
-                avatar={
-                  <Avatar sx={{ bgcolor: red[500] }} aria-label={item.label}>
-                    E
-                  </Avatar>
-                }
-                action={
-                  <IconButton aria-label="settings">
-                    <MoreVertIcon />
+    // <div className="container-fluid" style={{background: 'url("https://img.freepik.com/free-photo/white-brush-stroke-texture-background_53876-132775.jpg?t=st=1657194230~exp=1657194830~hmac=a96d7825071211996733ca07daf464c736e73d542cf4370475d8af6265bd95be&w=900")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+      <div className="container" style={{marginBottom: '9rem'}}>
+        <h3 className="text-center">Recent blog</h3>
+          <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
+        <Grid 
+          container
+          spacing={2}>
+          {items.map((item, i)=> (
+            <Grid item xs={12} sm={6} md={4} key={i}>
+              <Card sx={{ maxWidth: 345 }} elevation={5}>
+                <CardHeader
+                  avatar={
+                    <Avatar sx={{ bgcolor: red[500] }} aria-label={item.label}>
+                      E
+                    </Avatar>
+                  }
+                  action={
+                    <IconButton aria-label="settings">
+                      <MoreVertIcon />
+                    </IconButton>
+                  }
+                  title={item.title}
+                  subheader={item.date}
+                />
+                <CardMedia
+                  component="img"
+                  height="194"
+                  image={item.img}
+                  alt={item.label}
+                />
+                <CardContent>
+                  <Typography variant="body2" color="text.secondary">
+                  {item.desc}
+                  </Typography>
+                </CardContent>
+                <CardActions disableSpacing sx={{display: "flex", justifyContent: "center"}}>
+                  {/* <IconButton aria-label="add to favorites">
+                    <FavoriteIcon />
                   </IconButton>
-                }
-                title={item.title}
-                subheader={item.date}
-              />
-              <CardMedia
-                component="img"
-                height="194"
-                image={item.img}
-                alt={item.label}
-              />
-              <CardContent>
-                <Typography variant="body2" color="text.secondary">
-                {item.desc}
-                </Typography>
-              </CardContent>
-              <CardActions disableSpacing sx={{display: "flex", justifyContent: "center"}}>
-                {/* <IconButton aria-label="add to favorites">
-                  <FavoriteIcon />
-                </IconButton>
-                <IconButton aria-label="share">
-                  <ShareIcon />
-                </IconButton> */}
-                <Button variant="outlined">Read more</Button>
-              </CardActions>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-
-    </div>
+                  <IconButton aria-label="share">
+                    <ShareIcon />
+                  </IconButton> */}
+                  <Button variant="outlined">Read more</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </div>
+    // </div>
   );
 }

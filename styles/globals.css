@@ -4,6 +4,10 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background: url('https://img.freepik.com/free-photo/white-brush-stroke-texture-background_53876-132775.jpg?t=st=1657194230~exp=1657194830~hmac=a96d7825071211996733ca07daf464c736e73d542cf4370475d8af6265bd95be&w=900');
+	/* background-position: center; */
+	/* background-size: cover; */
+	/* background-repeat: no-repeat; */
 }
 
 a {
