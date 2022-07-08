@@ -5,6 +5,7 @@ import CardIndex2 from '../components/card/CardIndex2'
 import HeroBanner1 from '../components/heroBanner1/HeroBanner1'
 // import Image from 'next/image'
 import HeroSection from '../components/HeroSection'
+import HeroSection1 from '../components/heroSection/HeroSection'
 import ShopIndex from '../components/shopIndex/ShopIndex'
 import Testimonial from '../components/testimonial/Testimonial'
 import WhatWeDo from '../components/whatWeDo/WhatWeDo'
@@ -26,7 +27,8 @@ export default function Home() {
         <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></Script>
       </Head>
       {/* <div className="container-fluid"> */}
-        <HeroSection/>
+        {/* <HeroSection/> */}
+        <HeroSection1 />
         <CardIndex />
         <CardIndex2 />
         <HeroBanner1 />
