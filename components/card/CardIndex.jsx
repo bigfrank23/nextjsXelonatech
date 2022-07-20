@@ -6,8 +6,8 @@ import React from 'react'
 const CardIndex = () => {
   return (
     <div className="container my-5">
-      <div className="whatWeDoTitle mb-5">
-            <h2 className="text-center">Why elonatech</h2>
+      <div className="whatWeDoTitle" style={{marginTop: '15rem', marginBottom: '3rem'}}>
+            <h2 className="text-center" style={{color: '#34548c'}}>Why elonatech</h2>
             <hr className="m-auto my-3" style={{background: 'red', width: '50px', height: "2px"}}/>
             <h4 className="text-center text-secondary">Top-notch technology service providers</h4>
       </div>
@@ -34,7 +34,7 @@ const CardIndex = () => {
                   <Typography variant='h5' color="#fff">Website and App Solutions</Typography>
                   <hr style={{background: '#fff', width: '50px', height: "2px", border: 0}} />
                   <Typography variant='body2' color="#fff">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, adipisci ab. Nihil deserunt rerum provident? Nemo modi magni rerum iure!</Typography>
-                  <Button variant='contained' color='secondary' sx={{my: '1rem'}}>Learn more <KeyboardArrowRightIcon /></Button>
+                  <Button variant='contained' sx={{my: '1rem', background: '#34548c'}}>Learn more <KeyboardArrowRightIcon /></Button>
                 {/* </Item> */}
               </Box>
             </Box>
@@ -48,7 +48,7 @@ const CardIndex = () => {
                 <Typography variant='h5' color="#fff">Flexible, Scalable IT Solutions</Typography>
                   <hr style={{background: '#fff', width: '50px', height: "2px", border: 0}} />
                   <Typography variant='body2' color="#fff">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, adipisci ab. Nihil deserunt rerum provident? Nemo modi magni rerum iure!</Typography>
-                  <Button variant='contained' color='secondary' sx={{my: '1rem'}}>Learn more <KeyboardArrowRightIcon /></Button>
+                  <Button variant='contained' sx={{my: '1rem', background: '#34548c'}}>Learn more <KeyboardArrowRightIcon /></Button>
                 {/* </Item> */}
               </Box>
             </Box>
@@ -63,7 +63,7 @@ const CardIndex = () => {
                 <Typography variant='h5' color="#fff">Well seasoned Experts on Demand</Typography>
                   <hr style={{background: '#fff', width: '50px', height: "2px", border: 0}} />
                   <Typography variant='body2' color="#fff">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, adipisci ab. Nihil deserunt rerum provident? Nemo modi magni rerum iure!</Typography>
-                  <Button variant='contained' sx={{my: '1rem'}}>Learn more <KeyboardArrowRightIcon /></Button>
+                  <Button variant='contained' color='error' sx={{my: '1rem'}}>Learn more <KeyboardArrowRightIcon /></Button>
                 {/* </Item> */}
               </Box>
             </Box>

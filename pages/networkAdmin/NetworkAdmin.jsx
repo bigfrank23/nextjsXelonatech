@@ -1,4 +1,8 @@
 import { Box, Grid, Paper, Typography } from '@mui/material'
+import Button from '@mui/material/Button';
+import DeleteIcon from '@mui/icons-material/Delete';
+import SendIcon from '@mui/icons-material/Send';
+import Stack from '@mui/material/Stack';
 import React from 'react'
 import { v4 as uuidv4 } from "uuid";
 import AnimatedText from 'react-animated-text-content';
@@ -6,6 +10,31 @@ import MovingComponent from 'react-moving-text'
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 import VerifiedTwoToneIcon from '@mui/icons-material/VerifiedTwoTone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import "@splidejs/splide/dist/css/splide.min.css";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/pagination";
+
+// import required modules
+import { EffectCube, Pagination } from "swiper";
+
+const netAdminHeader = {
+  height: "50vh !important",
+  width: "100%", 
+  padding: '5rem',
+  display: 'flex', 
+  flexDirection: "column", 
+  alignItems: 'center', 
+  justifyContent: 'center', 
+  gap: '3rem',
+  background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1655635643568-f30d5abc618a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80) center top / cover transparent',
+}
 
 const fancyBox = {
     color: "rgba(0, 0, 0, 0.87)",
@@ -29,151 +58,206 @@ const fancyBox = {
     boxShadow: "rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem",
 }
 
+const fancyBox2 = {
+    color: "rgba(0, 0, 0, 0.87)",
+    transition: "box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+    position: "relative",
+    minWidth: "0px",
+    overflowWrap: "break-word",
+    backgroundClip: "border-box",
+    border: "0px solid rgba(0, 0, 0, 0.125)",
+    marginLeft: "24px",
+    marginRight: "24px",
+    borderRadius: "0.75rem",
+    overflow: "visible",
+    padding: "1rem 3rem",
+    backgroundColor: "rgba(255, 255, 255, 0.8)",
+    backdropFilter: "saturate(200%) blur(30px)",
+    boxShadow: "rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem",
+}
+
+const glassEffect = {
+  borderRadius: '.75rem',
+  padding: '35px',
+  backgroundColor: 'rgba(255, 255, 255, .45)',
+  border: '1px solid rgba(255, 255, 255, .25)',
+  boxShadow: '0 0 10px 1px rgba(0, 0, 0, .25)',
+  filter: 'drop-shadow(2px 5px 6px #E7EBF0)',
+  transition: 'transform .25s ease',
+  '&:hover': {
+    transform: 'translateY(-20px)'
+  }
+}
+
+const circle = {
+  // margin: '-4px 20px 0px 0',
+  width: '30px',
+  height: '30px',
+  padding: '1rem',
+  backgroundColor: '#003366',
+  borderRadius: '50%'
+}
+const stackBox = {
+  position: 'relative',
+  top: '15%',
+}
+const stackCard1 = {
+  position: 'absolute',
+  width: '600px',
+  height: '400px',
+  transition: 'transform .25s linear',
+  transform: 'scale(.9) translateX(-9.2%) translateY(10px)',
+  '&:hover' : {
+    transform: 'scale(.9) translateX(-11.2%) translateY(20px)',
+  }
+}
+const stackCard2 = {
+  position: 'absolute',
+  width: '600px',
+  height: '400px',
+  transform: 'translateY(-30px)',
+  transition: 'transform .25s linear',
+  '&:hover' : {
+    transform: 'translateY(-60px)'
+  }
+  // transform: 'scale(.9) translateX(-9.2%)',
+}
+
 const data = [
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    icon: "RadioButtonCheckedIcon",
-    txt: 'Design, installation, and evaluation of the network'
+    txt: 'Network Design, Installation, and Evaluation'
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Execution and administration of regular backups'
+    txt: 'Execution and Administration of Backups'
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Creation of precise technical documentation, such as network diagrams, network cabling documents, etc.'
+    txt: 'Network Resource Authentication'
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Provision for precise authentication to access network resources'
+    txt: 'Network Security, including intrusion detection'
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Provision for troubleshooting assistance'
+    txt: 'Network Hardware Configuration, e.g. routers, switches'
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Administration of network security, including intrusion detection'
+    txt: 'Network Upgrade and Maintenance'
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Configuring network hardware like servers, routers, and switches'
+    txt: 'Software Deployment and updating'
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Upgrading and repairing computer networks'
+    txt: 'Server Management'
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Troubleshooting network issues'
+    txt: 'Cloud and Physical Network Storage Management'
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Assisting network architects with the design of network models'
+    txt: 'LAN and WAN Network setup'
+  }
+]
+
+const projects = [
+  {
+    id: uuidv4(),
+    img: '/images/NetworkingProjects/DSC06956.jpg',
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Implementing security measures and basic testing'
+    img: '/images/NetworkingProjects/DSC06958.jpg',
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Deploying and updating software'
+    img: '/images/NetworkingProjects/IMG_1939.jpg',
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Managing servers and their operating systems'
+    img: '/images/NetworkingProjects/IMG_1940.jpg',
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Managing cloud and physical network storage'
+    img: '/images/NetworkingProjects/IMG_1964.jpg',
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'LAN and WAN network setup (Cable and Wireless).'
+    img: '/images/NetworkingProjects/IMG_2213.jpg',
   },
   {
     id: uuidv4(),
-    img: "/logoAndIcons/internet.png",
-    txt: 'Configurations on managed switches and Cisco Routers'
+    img: '/images/NetworkingProjects/IMG_2220.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/NetworkingProjects/IMG-20130906-00178.jpg',
   },
 ]
 
 const NetworkAdmin = () => {
   return (
     <>
-        <div style={{background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1655635643568-f30d5abc618a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80) center top / cover transparent', width: "100%", height: "75vh", display: 'flex', flexDirection: "column", alignItems: 'center', justifyContent: 'center', gap: '3rem'}}>
-          <Box sx={{display: 'flex', flexDirection: 'column'}}>
-            <LocationOnIcon sx={{fontSize:'2rem', color: 'red', alignSelf: 'center'}}/>
-            <Typography variant='body1' color='#fff'>Network Administration / Implementation</Typography>
+        <Box sx={netAdminHeader}>
+          <Box sx={{textAlign: 'center'}}>
+            <Typography variant='body1' color='#fff' mb='1rem'>Manage, Monitor, Maintain, Secure, and Service Networks</Typography>
+            <Typography variant='h4' color="#fff">We're responsible for installing, implementing, <br /> and maintaining business applications for organizations</Typography>
           </Box>
-          <Box sx={{width: '50%'}}>
-            <Typography variant='h4' color="#fff">This involves a wide array of operational tasks that help a network to run smoothly and efficiently.</Typography>
-            <Typography variant='subtitle1' color="#fff" sx={{mt: '1rem'}}>It consists of operations ranging from the regulars such as the physical configuration of the computer systems network (wired/wireless), to structured cabling, infrastructure/system integration, and to the setup and installing of the servers, and the configuration of routers and switches.</Typography>
-          </Box>
-        </div>
+        </Box>
         <Box sx={fancyBox}>
-        <MovingComponent
-        type="shadow"
-        duration="1000ms"
-        delay="0s"
-        direction="normal"
-        timing="ease"
-        iteration="1"
-        fillMode="none">
-          <Typography component='' variant='h4' mb={6} maxWidth={800} m='auto' color='#34548c'>
-            The main tasks associated with network administration
-            includes:
-          </Typography>
-      </MovingComponent>
-          <Grid container rowGap={10} mt={5} paddingLeft={5} paddingRight={5}>
-            {data.map((item)=> (
-              <Grid item key={item.id} xs={12} sm={4} md={4}>
-                <Box sx={{p: 2, height: '100px', textAlign: 'center', transition: 'color .5s ease', '&:hover': {color: "#34548c"}}}>
-                  {/* <i class={item.icon} aria-hidden="true"></i> */}
-                  {/* <RadioButtonCheckedIcon /> */}
-                  <VerifiedTwoToneIcon sx={{fontSize: '2rem', '&:hover': {color: "blueviolet"}}} />
-                  {/* <img src={item.img} width={50} alt="" /> */}
-                <AnimatedText
-                  type="words" // animate words or chars
-                  animation={{
-                    x: '200px',
-                    y: '-20px',
-                    scale: 1.1,
-                    ease: 'ease-in-out',
-                  }}
-                  animationType="light"
-                  interval={0.06}
-                  duration={0.8}
-                  tag="p"
-                  className="animated-paragraph"
-                  includeWhiteSpaces
-                  threshold={0.1}
-                  rootMargin="20%"
-                  style={{padding: "1rem 2rem 2rem 2rem", fontSize: "1.2rem"}}
-                >
-                  {/* <Typography variant='body2'> */}
-                    {item.txt}
-                  {/* </Typography> */}
-                </AnimatedText>
+          <Box component='div' sx={{display: 'flex', gap: '2rem', padding: '2rem'}}>
+            <Box sx={glassEffect}>
+              <Typography variant='h5' mb='1rem' color='#34548c'>Implementation</Typography>
+              <Typography variant='body1' mb='1rem'>
+                Due to the demands of today's growing economy and virtual IT environments, Organizations are beginning to rely on scalable and reliable IT infrastructure. Elonatech helps clients determine  most effective technologies that will provide maximum productivity. Whether your business is looking to build a whole new network in an already existing area or to add on to your existing infrastructure, we will design it from conceptualization, with all of your needs in mind.
+              </Typography>
+              <Typography variant='body1'>
+                We understand the importance of covering all your installation needs to make the implementation stage seamless. We install networks which includes deploying the hardware (routers, switches, firewalls, access points, servers, racks, etc.) as well as implementing the physical cabling infrastructure (Cat 5e, Cat 6 and Fiber cabling) and secure wireless setup to guarantee business protection.
+              </Typography>
+            </Box>
+            <Box sx={glassEffect}>
+              <Typography variant='h5' mb='1rem' color='#34548c'>Administration</Typography>
+              <Typography variant='body1' mb='1rem'>
+                Network administration aims to ensure a reliable, secure network conducive to business operations. Network administration primarily consists of, but isn't limited to, network monitoring, network management, and maintaining network quality and security.
+              </Typography>
+              <Typography variant='body1' mb='1rem'>
+                Elonatech supports all the networks we implement and support existing ones. Any issues you have from desktops and laptops to servers, networking hardware and printers we will assess, investigate and proffer a solution. We offer backup consultation and configuration both onsite and offsite, hardware recommendations, upgrading existing installations and remote access consultation and configuration.
+              </Typography>
+              <Typography variant='body1'>
+                Our trained and experienced professionals will manage all facets of the network needs. Through remote monitoring, problems are detected early and corrective action can be taken, reducing the risk of costly network problems and downtime.
+              </Typography>
+            </Box>
+          </Box>
+          <Box sx={{background: '#e6e9ec', padding: '4rem', borderRadius: '0.75rem'}}>
+            <Box sx={{display: 'flex', gap: '4rem'}}>
+              <Box component='div' sx={{flex: 1, padding: '2rem'}}>
+                    {data.map((item)=> (
+                  <Box sx={{display: 'flex', gap: '2rem', marginBottom: '1rem'}}>
+                      <Box style={circle} />
+                      <Typography color='#34548c' alignSelf='center'>
+                        {item.txt}
+                      </Typography>
+                  </Box>
+                    ))}
+              </Box>
+              <Box sx={{flex: '1'}}>
+                <Box sx={stackBox}>
+                    <Box sx={stackCard1}>
+                      <img style={{width: '100%', height: '100%'}} src="https://images.unsplash.com/photo-1658258338048-c7f6c9d9330d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1229&q=80" alt="" />
+                    </Box>
+                    <Box sx={stackCard2}>
+                      <img style={{width: '100%', height: '100%'}} src="https://images.unsplash.com/photo-1557264322-b44d383a2906?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+                    </Box>
                 </Box>
-              </Grid>
-            ))}
-          </Grid>
+              </Box>
+            </Box>
+          </Box>
         </Box>
         <Box mb={5}>
           <Box sx={{display: "flex", height: "350px"}}>
@@ -189,9 +273,99 @@ const NetworkAdmin = () => {
             </Box>
           </Box>
         </Box>
-
-        <Box>
-          <Typography variant='h4' textAlign='center'>Projects</Typography>
+        <Box sx={{marginTop: '4rem'}}>
+          <Typography variant='h4' textAlign='center' color='#34548c'>Some of our recent completed projects</Typography>
+          <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
+          <Box sx={fancyBox2}>
+            <Typography variant='subtitle1' textTransform='uppercase' maxWidth='80%' margin='auto' textAlign='center' marginBottom='1rem'>
+              Sub-contractor to pine-height system on networking/structured cabling of a 3 floor office building (48 points)
+              LAN setup, Mounting of a 48U Rack, Termination of patch and installation of the various Networking devices(Routers, Switches, etc) on the
+              Samsung Heavy Industry at LADOL
+            </Typography>
+              <Splide
+                options={{
+                  type: "loop",
+                  drag: "free",
+                  arrows: true,
+                  pagination: false,
+                  perPage: 3,
+                  autoScroll: {
+                    pauseOnHover: true,
+                    pauseOnFocus: false,
+                    rewind: false,
+                    speed: 1
+                  }
+                }}
+                extensions={{ AutoScroll }}
+                style={{padding: '0 5rem'}}
+              >
+                  {projects.map((project)=> (
+                    <SplideSlide key={project.id}>
+                        <img src={project.img} style={{width: '470px', height: '300px', objectFit: 'cover'}} alt="Image 1" />
+                    </SplideSlide>
+                  ))}
+            </Splide>
+            </Box>
+          <Box sx={fancyBox2} margin='2rem 0'>
+            <Typography variant='subtitle1' textTransform='uppercase' maxWidth='80%' margin='auto' textAlign='center' marginBottom='1rem'>
+              Sub-contractor to pine-height system on networking/structured cabling of a 3 floor office building (48 points)
+              LAN setup, Mounting of a 48U Rack, Termination of patch and installation of the various Networking devices(Routers, Switches, etc) on the
+              Samsung Heavy Industry at LADOL
+            </Typography>
+              <Splide
+                options={{
+                  type: "loop",
+                  drag: "free",
+                  arrows: true,
+                  pagination: false,
+                  perPage: 3,
+                  autoScroll: {
+                    pauseOnHover: true,
+                    pauseOnFocus: false,
+                    rewind: false,
+                    speed: 1
+                  }
+                }}
+                extensions={{ AutoScroll }}
+                style={{padding: '0 5rem'}}
+              >
+                  {projects.map((project)=> (
+                    <SplideSlide key={project.id}>
+                        <img src={project.img} style={{width: '470px', height: '300px', objectFit: 'cover'}} alt="Image 1" />
+                    </SplideSlide>
+                  ))}
+            </Splide>
+            </Box>
+        </Box>
+        <Box sx={{marginBottom: '4rem'}}>
+        <Swiper
+        effect={"cube"}
+        grabCursor={true}
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        }}
+        pagination={true}
+        modules={[EffectCube, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide style={{background: 'url("https://images.unsplash.com/photo-1429087969512-1e85aab2683d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")', backgroundSize: 'cover'}}>
+          {/* <img src="https://swiperjs.com/demos/images/nature-1.jpg" style={{width: '100%', height: '100%'}} /> */}
+          <Box sx={{marginTop: '20%'}}>
+              <Typography textAlign='center' variant='h6' color='#fff' fontWeight={700} marginBottom= '2rem'>Ready to discuss <br/> your Project?</Typography>
+            <Box sx={{textAlign: 'center'}}>
+                <Button variant="contained" endIcon={<SendIcon />}>
+                  Get a Quote
+                </Button>
+            </Box>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide style={{background: "url('https://images.unsplash.com/photo-1504470695779-75300268aa0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')"}}>
+          <img src="/logoAndIcons/logo2.png" style={{width: '100%', height: '100%'}} />
+        </SwiperSlide>
+      </Swiper>
         </Box>
     </>
   )

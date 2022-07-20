@@ -47,7 +47,7 @@ a {
   position: relative;    
   /* background: #9b9b9b; */
   /* background: #e41112; */
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../public/images/heroImg/img3.png');
+  background: linear-gradient(rgba(52, 84, 140, 0.4), rgba(52, 84, 140, 0.4)), url('../public/images/heroImg/img3.png');
   background-position: center;
   background-size: cover;
 	padding: 15px;
@@ -58,7 +58,7 @@ a {
   transition: border-left .25s ease;
 }
 .carousel .testimonial:hover {
-  border-left: 10px solid #666;
+  border-left: 10px solid #34548c;
   border-bottom-left-radius: 1rem;
 }
 .carousel .testimonial::before, .carousel .testimonial::after {
@@ -71,7 +71,7 @@ a {
 .carousel .testimonial::before {
     width: 20px;
     height: 20px;
-	background: #9b9b9b;
+	background: #34548c;
 	box-shadow: inset 12px 0 13px rgba(0,0,0,0.5);
 }
 .carousel .testimonial::after {
@@ -159,4 +159,27 @@ a {
 }
 .awssld--fallAnimation{
 	height: 70vh;
+}
+
+/* Swiper */
+.swiper {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0 !important;
+  transform: translate(-50%);
+  /* margin-left: -150px;
+  margin-top: -150px; */
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }

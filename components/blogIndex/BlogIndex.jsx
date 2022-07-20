@@ -44,7 +44,7 @@ export default function BlogIndex() {
   return (
     // <div className="container-fluid" style={{background: 'url("https://img.freepik.com/free-photo/white-brush-stroke-texture-background_53876-132775.jpg?t=st=1657194230~exp=1657194830~hmac=a96d7825071211996733ca07daf464c736e73d542cf4370475d8af6265bd95be&w=900")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
       <div className="container" style={{marginBottom: '9rem'}}>
-        <h3 className="text-center">Recent blog</h3>
+        <h3 className="text-center" style={{color: '#34548c'}}>Recent blog</h3>
           <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
         <Grid 
           container

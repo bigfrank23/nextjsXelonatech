@@ -105,7 +105,7 @@ const OurClients = () => {
       };
   return (
     <div className='container' style={{marginBottom: '9rem'}}>
-        <h3 className="text-center">Some of our clients</h3>
+        <h3 className="text-center" style={{color: '#34548c'}}>Some of our clients</h3>
         <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
         <Paper sx={{p: '3rem'}}>
             <Carousel
@@ -117,7 +117,7 @@ const OurClients = () => {
                 customTransition="all 5"
                 transitionDuration={2000}
                 autoPlay
-                showDots='true'
+                // showDots='false'
                 rewindWithAnimation='true'
                 arrows={false}
                 infinite

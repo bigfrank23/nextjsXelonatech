@@ -3,9 +3,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
 }
-.WhatWeDoBestInnerCard{
-   /* display: flex; */
-}
 .WhatWeDoBestInnerCardImg{
     /* background: url('/images/pc.jpg'); */
     background-position: center !important;
@@ -19,7 +16,7 @@
 .halfOverlay{
     position: absolute;
     bottom: 0;
-    background: linear-gradient(0deg, rgba(4, 14, 25, 0.9), rgba(4, 14, 25, 0.9));
+    background: linear-gradient(0deg, rgba(52, 84, 140, 0.9), rgba(52, 84, 140, 0.9));
     color: #fff;
     padding: 1rem;
     width: 250px;
@@ -40,7 +37,7 @@
 .fullOverlay{
     position: absolute;
     bottom: 0;
-    background: linear-gradient(0deg, rgba(5, 26, 48, 0.9), rgba(5, 26, 48, 0.9));
+    background: linear-gradient(0deg, rgba(52, 84, 140, 0.9), rgba(52, 84, 140, 0.9));
     color: #fff;
     padding: 0;
     height: 0;

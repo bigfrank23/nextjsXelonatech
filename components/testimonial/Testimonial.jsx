@@ -8,7 +8,7 @@ const Testimonial = () => {
 		<div className="row">
 			<div className="col-sm-12">			
 				<div id="myCarousel" className="carousel slide" data-ride="carousel">
-					<h3 className='text-center'>What others say about us</h3>
+					<h3 className='text-center' style={{color: '#34548c'}}>What others say about us</h3>
 					<hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
 					{/* Carousel indicators */}
 					<ol className="carousel-indicators">

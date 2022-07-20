@@ -139,7 +139,7 @@ const ShopIndex = () => {
 
   return (
     <div className="container" style={{marginBottom: '9rem'}}>
-      <h3 className="text-center">Latest Product</h3>
+      <h3 className="text-center" style={{color: '#34548c'}}>Latest Product</h3>
         <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
         <Carousel
         // showDots={true}
@@ -155,7 +155,7 @@ const ShopIndex = () => {
                 {/* <Box sx={{textAlign: "right", padding: "3px", cursor: "pointer", '&:hover': {transform: "rotate(2deg)"}}}>
                     <img src='/logoAndIcons/touch.svg' width={20} />
                 </Box> */}
-                  <PreviewIcon onClick={()=>handleOpen(item)} sx={{float: "right", fontSize: '2rem', padding: "3px", cursor: "pointer", '&:hover': {transform: "rotate(6deg)", color: 'red'}}} />
+                  <PreviewIcon onClick={()=>handleOpen(item)} sx={{fill: 'rgba(52, 84, 140, 1)', float: "right", fontSize: '2rem', padding: "3px", cursor: "pointer", '&:hover': {transform: "rotate(6deg)", color: 'red'}}} />
                 <CardMedia
                     component="img"
                     alt={item.name}
