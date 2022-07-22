@@ -14,12 +14,111 @@ const Navbar = () => {
   const [productsSlideNav3, setProductsSlideNav3] = useState(false)
   const [productsSlideNav4, setProductsSlideNav4] = useState(false)
 
-  const [whoWeAreSlideNav1, setWhoWeAreSlideNav1] = useState(false)
-  const [whoWeAreSlideNav2, setWhoWeAreSlideNav2] = useState(false)
-  const [whoWeAreSlideNav3, setWhoWeAreSlideNav3] = useState(false)
-  const [whoWeAreSlideNav4, setWhoWeAreSlideNav4] = useState(false)
-  const [slideNav, setSlideNav] = useState(false)
+  const [techMouseEnter, setTechMouseEnter] = useState(true)
+  const [digitalMouseEnter, setDigitalMouseEnter] = useState(false)
+  const [salesMouseEnter, setSalesMouseEnter] = useState(false)
 
+  const [hardwareMouseOver, setHardwareMouseOver] = useState(true)
+  const [networkMouseOver, setNetworkMouseOver] = useState(false)
+  const [systemMouseOver, setSystemMouseOver] = useState(false)
+  const [telecomMouseOver, setTelecomMouseOver] = useState(false)
+  const [softwareMouseOver, setSoftwareMouseOver] = useState(false)
+
+  const [webMouseOver, setWebMouseOver] = useState(true)
+  const [digitalMouseOver, setDigitalMouseOver] = useState(false)
+  const [graphicsMouseOver, setGraphicsMouseOver] = useState(false)
+  const [videoMouseOver , setVideoMouseOver] = useState(false)
+  const [teleMouseOver, setTeleMouseOver] = useState(false)
+
+  const handleTechMouseEnter = () => {
+    setTechMouseEnter(true)
+    setDigitalMouseEnter(false)
+    setSalesMouseEnter(false)
+  }
+  const handleDigitalMouseEnter = () => {
+    setDigitalMouseEnter(true)
+    setSalesMouseEnter(false)
+    setTechMouseEnter(false)
+  }
+  const handleSalesMouseEnter = () => {
+    setSalesMouseEnter(true)
+    setTechMouseEnter(false)
+    setDigitalMouseEnter(false)
+  }
+
+  const handleHardwareMouseOver = () => {
+    setHardwareMouseOver(true)
+    setNetworkMouseOver(false)
+    setSystemMouseOver(false)
+    setTelecomMouseOver(false)
+    setSoftwareMouseOver(false)
+  }
+  const handleNetworkMouseOver = () => {
+    setNetworkMouseOver(true)
+    setHardwareMouseOver(false)
+    setSystemMouseOver(false)
+    setTelecomMouseOver(false)
+    setSoftwareMouseOver(false)
+  }
+  const handleSystemMouseOver = () => {
+    setSystemMouseOver(true)
+    setNetworkMouseOver(false)
+    setHardwareMouseOver(false)
+    setTelecomMouseOver(false)
+    setSoftwareMouseOver(false)
+  }
+  const handleTelecomMouseOver = () => {
+    setTelecomMouseOver(true)
+    setSystemMouseOver(false)
+    setNetworkMouseOver(false)
+    setHardwareMouseOver(false)
+    setSoftwareMouseOver(false)
+  }
+  const handleSoftwareMouseOver = () => {
+    setSoftwareMouseOver(true)
+    setTelecomMouseOver(false)
+    setSystemMouseOver(false)
+    setNetworkMouseOver(false)
+    setHardwareMouseOver(false)
+  }
+  
+  // 
+  const handleWebMouseOver = () => {
+    setWebMouseOver(true)
+    setDigitalMouseEnter(false)
+    setGraphicsMouseOver(false)
+    setVideoMouseOver(false)
+    setTeleMouseOver(false)
+  }
+  const handleDigitalMouseOver = () => {
+    setDigitalMouseEnter(true)
+    setWebMouseOver(false)
+    setGraphicsMouseOver(false)
+    setVideoMouseOver(false)
+    setTeleMouseOver(false)
+  }
+  const handleGraphicsMouseOver = () => {
+    setGraphicsMouseOver(true)
+    setDigitalMouseEnter(false)
+    setWebMouseOver(false)
+    setVideoMouseOver(false)
+    setTeleMouseOver(false)
+  }
+  const handleVideoMouseOver = () => {
+    setVideoMouseOver(true)
+    setGraphicsMouseOver(false)
+    setDigitalMouseEnter(false)
+    setWebMouseOver(false)
+    setTeleMouseOver(false)
+  }
+  const handleTeleMouseOver = () => {
+    setTeleMouseOver(true)
+    setVideoMouseOver(false)
+    setGraphicsMouseOver(false)
+    setDigitalMouseEnter(false)
+    setWebMouseOver(false)
+  }
+  
   const handleSolution1 = () => {
     setSolutionsSlideNav1(true)
     setSolutionsSlideNav2(false)
@@ -70,32 +169,6 @@ const Navbar = () => {
     setProductsSlideNav3(false)
     setProductsSlideNav2(false)
   }
-
-  // Who We Are
-  const handleWhoWeAre1 = () => {
-    setWhoWeAreSlideNav1(true)
-    setWhoWeAreSlideNav2(false)
-    setWhoWeAreSlideNav3(false)
-    setWhoWeAreSlideNav4(false)
-  }
-  const handleWhoWeAre2 = () => {
-    setWhoWeAreSlideNav2(true)
-    setWhoWeAreSlideNav1(false)
-    setWhoWeAreSlideNav3(false)
-    setWhoWeAreSlideNav4(false)
-  }
-  const handleWhoWeAre3 = () => {
-    setWhoWeAreSlideNav3(true)
-    setWhoWeAreSlideNav1(false)
-    setWhoWeAreSlideNav2(false)
-    setWhoWeAreSlideNav4(false)
-  }
-  const handleWhoWeAre4 = () => {
-    setWhoWeAreSlideNav4(true)
-    setWhoWeAreSlideNav1(false)
-    setWhoWeAreSlideNav3(false)
-    setWhoWeAreSlideNav2(false)
-  }
   return (
     <div className={styles.container}>
         <div className={styles.logoBox}>
@@ -107,7 +180,7 @@ const Navbar = () => {
 
           {/* Solutions */}
           <li className={styles.listItem}>Solutions <span><i className="fa fa-angle-down" aria-hidden="true" /></span>
-          <div className={solutionsSlideNav1 || solutionsSlideNav2 || solutionsSlideNav3 || solutionsSlideNav4 ? styles.mainDropdownActive : styles.mainDropdown}>
+          <div className={styles.mainDropdownActive}>
               <div className={styles.mainDropdownLeft}>
                 <ul className={styles.mainDropdownLeftList}>
                     <li className={solutionsSlideNav1 ? styles.mainDropdownLeftListItemActive : styles.mainDropdownLeftListItem} onMouseOver={handleSolution1}>
@@ -119,12 +192,9 @@ const Navbar = () => {
                     <li className={solutionsSlideNav3 ? styles.mainDropdownLeftListItemActive : styles.mainDropdownLeftListItem} onMouseOver={handleSolution3}>
                       Sales <span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
                     </li>
-                    {/* <li className={solutionsSlideNav4 ? styles.mainDropdownLeftListItemActive : styles.mainDropdownLeftListItem} onMouseOver={handleSolution4}>
-                      solutions 4<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
-                    </li> */}
                 </ul>
               </div>
-                <div className={solutionsSlideNav1  ? styles.mainDropdownRightActive : styles.mainDropdownRight}>
+                <div className={styles.mainDropdownRightActive}>
                   <ul className={solutionsSlideNav1  ? styles.mainDropdownRightListActive : styles.mainDropdownRightList}>
                     <li className={styles.mainDropdownRightListItem}>Hardware solutions
                     <ul className={styles.mainDropdownRightListItemList}>
@@ -149,29 +219,8 @@ const Navbar = () => {
                         <h5 style={{fontSize: "9px"}}>Networking Equipment</h5>
                       </li>
                     </ul>
-                    {/* <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>solutions 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>solutions 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>solutions 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>solutions 1</h5>
-                      </li>
-                    </ul> */}
                     </li>
+
                     <li className={styles.mainDropdownRightListItem}>Network Engineering / Administration
                     <ul className={styles.mainDropdownRightListItemList}>
                       <Link href="/networkAdmin/NetworkAdmin">
@@ -1217,1098 +1266,177 @@ const Navbar = () => {
             </div>
           </li>
 
-
           {/* Support*/}
           <li className={styles.listItem}>Support <span><i className="fa fa-angle-down" aria-hidden="true" /></span>
-          <div className={whoWeAreSlideNav1 || whoWeAreSlideNav2 || whoWeAreSlideNav3 || whoWeAreSlideNav4 ? styles.mainDropdownActive : styles.mainDropdown}>
-              <div className={styles.mainDropdownLeft}>
-                <ul className={styles.mainDropdownLeftList}>
-                    <li className={whoWeAreSlideNav1 ? styles.mainDropdownLeftListItemActive : styles.mainDropdownLeftListItem} onClick={handleWhoWeAre1}>
-                    Technical Support <span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
-                    </li>
-                    <li className={whoWeAreSlideNav2 ? styles.mainDropdownLeftListItemActive : styles.mainDropdownLeftListItem} onClick={handleWhoWeAre2}>
-                    Network Support<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
-                    </li>
-                    <li className={whoWeAreSlideNav3 ? styles.mainDropdownLeftListItemActive : styles.mainDropdownLeftListItem} onClick={handleWhoWeAre3}>
-                    Remote Support<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
-                    </li>
-                    <li className={whoWeAreSlideNav4 ? styles.mainDropdownLeftListItemActive : styles.mainDropdownLeftListItem} onClick={handleWhoWeAre4}>
-                    Administrative Support<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
-                    </li>
-                </ul>
-              </div>
-                <div className={whoWeAreSlideNav1  ? styles.mainDropdownRightActive : styles.mainDropdownRight}>
-                  <ul className={whoWeAreSlideNav1  ? styles.mainDropdownRightListActive : styles.mainDropdownRightList}>
-                    <li className={styles.mainDropdownRightListItem}>1 support 1
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 1</h5>
+            <div className={styles.mainDropdown}>
+                <div className={styles.mainDropdownLeft}>
+                  <ul className={styles.mainDropdownLeftList}>
+                      <li className={styles.mainDropdownLeftListItem}>
+                      Technical Support <span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
                       </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 1</h5>
+                      <li className={styles.mainDropdownLeftListItem}>
+                      Network Support<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
                       </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 1</h5>
+                      <li className={styles.mainDropdownLeftListItem}>
+                      Remote Support<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
                       </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 1</h5>
+                      <li className={styles.mainDropdownLeftListItem}>
+                      Administrative Support<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
                       </li>
-                    </ul>
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 1</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>2 support 1
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 1</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>3 support 1
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 1</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>4 support 1
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 1</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>5 who we wre 1
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we wre 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we wre 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we wre 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we wre 1</h5>
-                      </li>
-                    </ul>
-                    </li>
-                  </ul>
-                </div>
-                {/* Who we are Slide Nav 2 */}
-                <div className={whoWeAreSlideNav2  ? styles.mainDropdownRightActive : styles.mainDropdownRight}>
-                  <ul className={whoWeAreSlideNav2  ? styles.mainDropdownRightListActive : styles.mainDropdownRightList}>
-                    <li className={styles.mainDropdownRightListItem}>1 support 2
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 2</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>2 support 2
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 2</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>3 support 2
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 2</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>4 support 2
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 2</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>5 support 2
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 2</h5>
-                      </li>
-                    </ul>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* support Slide Nav 3 */}
-                <div className={whoWeAreSlideNav3  ? styles.mainDropdownRightActive : styles.mainDropdownRight}>
-                  <ul className={whoWeAreSlideNav3  ? styles.mainDropdownRightListActive : styles.mainDropdownRightList}>
-                    <li className={styles.mainDropdownRightListItem}>1 support 3
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 3</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>2 support 3
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 3</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>3 support 3
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 3</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>4 support 3
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 3</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>5 Support 3
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 3</h5>
-                      </li>
-                    </ul>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Who we are Slide Nav 4 */}
-                <div className={whoWeAreSlideNav4  ? styles.mainDropdownRightActive : styles.mainDropdownRight}>
-                  <ul className={whoWeAreSlideNav4  ? styles.mainDropdownRightListActive : styles.mainDropdownRightList}>
-                    <li className={styles.mainDropdownRightListItem}>1 support 4
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>support 4</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>2 support 4
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 support 4</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>3 support 4
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 support 4</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>4 support 4
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 support 4</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>5 support 4
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 support 4</h5>
-                      </li>
-                    </ul>
-                    </li>
                   </ul>
                 </div>
             </div>
           </li>
+          
+          {/* Consultancy */}
+          {/* <li className={styles.listItem}>Consultancy <span><i className="fa fa-angle-down" aria-hidden="true" /></span>
+          <div className={styles.mainDropdown}>
+              <div className={styles.mainDropdownLeft}>
+                <ul className={styles.mainDropdownLeftList}>
+                    <li className={styles.mainDropdownLeftListItem}>
+                    Retainer Patnership<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
+                    </li>
+                    <li className={styles.mainDropdownLeftListItem}>
+                    Consulting<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
+                    </li>
+                    <li className={styles.mainDropdownLeftListItem}>
+                    Training<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </li> */}
 
           {/* Who we are */}
           <li className={styles.listItem}>Who we are <span><i className="fa fa-angle-down" aria-hidden="true" /></span>
-          <div className={whoWeAreSlideNav1 || whoWeAreSlideNav2 || whoWeAreSlideNav3 || whoWeAreSlideNav4 ? styles.mainDropdownActive : styles.mainDropdown}>
+          <div className={styles.mainDropdown}>
               <div className={styles.mainDropdownLeft}>
                 <ul className={styles.mainDropdownLeftList}>
-                    <li className={whoWeAreSlideNav1 ? styles.mainDropdownLeftListItemActive : styles.mainDropdownLeftListItem} onClick={handleWhoWeAre1}>
-                    The Company<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
+                    <li className={styles.mainDropdownLeftListItem}>
+                    Our Company<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
                     </li>
-                    <li className={whoWeAreSlideNav2 ? styles.mainDropdownLeftListItemActive : styles.mainDropdownLeftListItem} onClick={handleWhoWeAre2}>
+                    <li className={styles.mainDropdownLeftListItem}>
                     Our Portfolio<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
                     </li>
-                    <li className={whoWeAreSlideNav3 ? styles.mainDropdownLeftListItemActive : styles.mainDropdownLeftListItem} onClick={handleWhoWeAre3}>
+                    <li className={styles.mainDropdownLeftListItem}>
                     Our Team<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
                     </li>
-                    <li className={whoWeAreSlideNav4 ? styles.mainDropdownLeftListItemActive : styles.mainDropdownLeftListItem} onClick={handleWhoWeAre4}>
+                    <li className={styles.mainDropdownLeftListItem}>
+                    Our Blog<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
+                    </li>
+                    <li className={styles.mainDropdownLeftListItem}>
                     Career<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
                     </li>
                 </ul>
               </div>
-                <div className={whoWeAreSlideNav1  ? styles.mainDropdownRightActive : styles.mainDropdownRight}>
-                  <ul className={whoWeAreSlideNav1  ? styles.mainDropdownRightListActive : styles.mainDropdownRightList}>
-                    <li className={styles.mainDropdownRightListItem}>1 who we are 1
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 1</h5>
-                      </li>
-                    </ul>
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 1</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>2 who we are 1
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 1</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>3 who we are 1
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 1</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>4 who we are 1
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 1</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>5 who we wre 1
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we wre 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we wre 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we wre 1</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we wre 1</h5>
-                      </li>
-                    </ul>
-                    </li>
-                  </ul>
-                </div>
-                {/* Who we are Slide Nav 2 */}
-                <div className={whoWeAreSlideNav2  ? styles.mainDropdownRightActive : styles.mainDropdownRight}>
-                  <ul className={whoWeAreSlideNav2  ? styles.mainDropdownRightListActive : styles.mainDropdownRightList}>
-                    <li className={styles.mainDropdownRightListItem}>1 who we are 2
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 2</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>2 who we are 2
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 2</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>3 who we are 2
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 2</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>4 who we are 2
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 2</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>5 who we are 2
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 2</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 2</h5>
-                      </li>
-                    </ul>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* who we are Slide Nav 3 */}
-                <div className={whoWeAreSlideNav3  ? styles.mainDropdownRightActive : styles.mainDropdownRight}>
-                  <ul className={whoWeAreSlideNav3  ? styles.mainDropdownRightListActive : styles.mainDropdownRightList}>
-                    <li className={styles.mainDropdownRightListItem}>1 who we are 3
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 3</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>2 who we are 3
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 3</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>3 who we are 3
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 3</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>4 who we are 3
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 3</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>5 Solutions 3
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 3</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 3</h5>
-                      </li>
-                    </ul>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Who we are Slide Nav 4 */}
-                <div className={whoWeAreSlideNav4  ? styles.mainDropdownRightActive : styles.mainDropdownRight}>
-                  <ul className={whoWeAreSlideNav4  ? styles.mainDropdownRightListActive : styles.mainDropdownRightList}>
-                    <li className={styles.mainDropdownRightListItem}>1 who we are 4
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>who we are 4</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>2 who we are 4
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>2 who we are 4</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>3 who we are 4
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>3 who we are 4</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>4 who we are 4
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>4 who we are 4</h5>
-                      </li>
-                    </ul>
-                    </li>
-                    <li className={styles.mainDropdownRightListItem}>5 who we are 4
-                    <ul className={styles.mainDropdownRightListItemList}>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 4</h5>
-                      </li>
-                      <li className={styles.mainDropdownRightListItemListItem}>
-                        <img src="/logoAndIcons/testIcon1.jpg" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain"}} />
-
-                        <h5 style={{fontSize: "9px"}}>5 who we are 4</h5>
-                      </li>
-                    </ul>
-                    </li>
-                  </ul>
-                </div>
             </div>
           </li>
-          <li className={styles.listItem}>Blog</li>
           <li className={styles.listItem}>Get in touch</li>
+
+          <li className={styles.listItem}>Solutions
+              <ul className={styles.innerListContainer}>
+                <li className={styles.innerListItemLeft}>
+                  <ul className={styles.innerListContentLeft}>
+                    <li className={styles.innerListItemContentLeft} onMouseEnter={handleTechMouseEnter}>Tech Solutions <span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span></li>
+                    <li className={styles.innerListItemContentLeft} onMouseEnter={handleDigitalMouseEnter}>Digital Solutions <span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span></li>
+                    <li className={styles.innerListItemContentLeft}onMouseEnter={handleSalesMouseEnter}>Sales <span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span></li>
+                  </ul>
+                </li>
+                <li className={styles.innerListItemRight}>
+                  <ul className={styles.innerListContentRight}>
+                    <li className={styles.innerListItemContentRight}>
+                      <ul className={techMouseEnter ? styles.innerListItemContentRightTechListActive : styles.innerListItemContentRightTechList}>
+                        <li className={styles.innerListItemContentRightTechListItem} onMouseEnter={handleHardwareMouseOver}>Hardware Solutions
+                          <ul className={hardwareMouseOver ? styles.hardwareSolutionsListActive : styles.hardwareSolutionsList}>
+                            <li className="hardwareSolutionsListItem">Computers</li>
+                            <li className="hardwareSolutionsListItem">Printers</li>
+                            <li className="hardwareSolutionsListItem">Mobile Devices</li>
+                            <li className="hardwareSolutionsListItem">Network Equipments</li>
+                          </ul>
+                        </li>
+                        <li className={styles.innerListItemContentRightTechListItem} onMouseEnter={handleNetworkMouseOver}>Network Administration / Engineering
+                          <ul className={networkMouseOver ? styles.networkAdministrationListActive : styles.networkAdministrationList}>
+                            <li className="networkAdministrationListItem">Network Administration /Implementation</li>
+                            <li className="networkAdministrationListItem">Server Administration</li>
+                            <li className="networkAdministrationListItem">Infrastructure / System Integration</li>
+                            <li className="networkAdministrationListItem">Structured cabling</li>
+                            <li className="networkAdministrationListItem">CCTV Installation / Implementation</li>
+                            <li className="networkAdministrationListItem">Internet Solutions</li>
+                            <li className="networkAdministrationListItem">Network Security</li>
+                          </ul>
+                        </li>
+                        <li className={styles.innerListItemContentRightTechListItem} onMouseEnter={handleSystemMouseOver}>System Security
+                          <ul className={systemMouseOver ? styles.systemSecurityListActive : styles.systemSecurityList}>
+                            <li className="systemSecurityListListItem">Access Control</li>
+                            <li className="systemSecurityListListItem">Time Management Solutions</li>
+                            <li className="systemSecurityListListItem">Surveilance</li>
+                          </ul>
+                        </li>
+                        <li className={styles.innerListItemContentRightTechListItem} onMouseEnter={handleTelecomMouseOver}>Telecoms
+                          <ul className={telecomMouseOver ? styles.telecomsListActive : styles.telecomsList}>
+                            <li className="telecomsListListItem">IP Telephony & PBX Systems</li>
+                            <li className="telecomsListListItem">VoIP</li>
+                          </ul>
+                        </li>
+                        <li className={styles.innerListItemContentRightTechListItem} onMouseEnter={handleSoftwareMouseOver}>Software Solutions
+                          <ul className={softwareMouseOver ? styles.softwareSolutionsListActive : styles.softwareSolutionsList}>
+                            <li className="softwareSolutionsListListItem">System Software</li>
+                            <li className="softwareSolutionsListListItem">Application Software</li>
+                            <li className="softwareSolutionsListListItem">Business Application Software</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className={styles.innerListItemContentRight}>
+                      <ul className={digitalMouseEnter ? styles.innerListItemContentRightDigitalListActive : styles.innerListItemContentRightDigitalList}>
+                        <li className={styles.innerListItemContentRightDigitalListItem} onMouseEnter={handleWebMouseOver}>Web Solutions
+                          <ul className={webMouseOver ? styles.webSolutionsListActive : styles.webSolutionsList}>
+                            <li className="webSolutionsListItem">Web Design/Dev.</li>
+                            <li className="webSolutionsListItem">Domain Reg./DNS Mgt </li>
+                            <li className="webSolutionsListItem">Web Hosting/Customized Email</li>
+                          </ul>
+                        </li>
+                        <li className={styles.innerListItemContentRightDigitalListItem} onMouseEnter={handleDigitalMouseOver}>Digital Marketing
+                          <ul className={digitalMouseOver ? styles.digitalMarketingListActive : styles.digitalMarketingList}>
+                            <li className="digitalMarketingListItem">Social Media Marketing</li>
+                            <li className="digitalMarketingListItem">Email Marketing</li>
+                            <li className="digitalMarketingListItem">SEO</li>
+                            <li className="digitalMarketingListItem">Content Marketing</li>
+                            <li className="digitalMarketingListItem">PPC/CPI </li>
+                          </ul>
+                        </li>
+                        <li className={styles.innerListItemContentRightDigitalListItem} onMouseEnter={handleGraphicsMouseOver}>Graphics
+                          <ul className={graphicsMouseOver ? styles.graphicsListActive : styles.graphicsList}>
+                            <li className="graphicsListListItem">Brand Development</li>
+                            <li className="graphicsListListItem">UI/UX & Prototyping</li>
+                          </ul>
+                        </li>
+                        <li className={styles.innerListItemContentRightDigitalListItem} onMouseEnter={handleVideoMouseOver}>Video Animations
+                          <ul className={videoMouseOver ? styles.videoAnimationsListActive : styles.videoAnimationsList}>
+                            <li className="videoAnimationsListListItem">2D/3D Animations</li>
+                            <li className="videoAnimationsListListItem">Motion Graphics</li>
+                            <li className="videoAnimationsListListItem">Video Editing</li>
+                          </ul>
+                        </li>
+                        <li className={styles.innerListItemContentRightDigitalListItem} onMouseEnter={handleTeleMouseOver}>Teleconferencing
+                          <ul className={teleMouseOver ? styles.teleconferencingListActive : styles.teleconferencingList}>
+                            <li className="teleconferencingListListItem">Livestreaming</li>
+                            <li className="teleconferencingListListItem">Videoconferencing</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className={styles.innerListItemContentRight}>
+                      <ul className={salesMouseEnter ? styles.innerListItemContentRightSalesListActive : styles.innerListItemContentRightSalesList}>
+                        <li className={styles.innerListItemContentRightSalesListItem}>Computer Equipments</li>
+                        <li className={styles.innerListItemContentRightSalesListItem}>Printers, Copiers, Scanners</li>
+                        <li className={styles.innerListItemContentRightSalesListItem}>Office Equipments</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+          </li>
         </ul>
     </div>
   );

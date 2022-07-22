@@ -91,7 +91,7 @@
 
   .mainDropdownLeft{
     flex: 1;
-    padding: 4rem;
+    padding: 2rem;
     border-right: 1px solid #ccc;
     transition: all 1s ease;
   }
@@ -234,7 +234,88 @@
     width: 100px;
   }
 
+  /* New Nav */
+  .innerListContainer{
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    list-style: none;
+    margin-top: 55rem;
+    position: absolute;
+    left: 0%;
+    top: -580%;
+  }
+  .innerListItemLeft, .innerListItemRight{
+    padding: 1rem;
+  }
+  .innerListContentLeft, .innerListContentRight{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .innerListContentLeft{
+    border-right: 1px solid #ccc;
+  }
+
+  .innerListItemContentLeft{
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    /* margin-bottom: 1rem; */
+    font-size: 12px;
+    padding: 1rem;
+    width: 160px;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: border-radius .5s ease;
+  }
+  .innerListItemContentLeft:hover{
+    color: #fff;
+    background-color: red;
+    border-radius: 1rem;
+  }
+
+  /* right */
+  .innerListItemContentRight{
+    font-size: 12px;
+  }
+
+  .innerListItemContentRightTechListActive, .innerListItemContentRightDigitalListActive, .innerListItemContentRightSalesListActive{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  .innerListItemContentRightDigitalListItem{
+    font-size: 12px;
+  }
+  .innerListItemContentRightTechList, .innerListItemContentRightDigitalList, .innerListItemContentRightSalesList{
+    display: none;
+  }
   
+  .hardwareSolutionsListActive, .networkAdministrationListActive, .systemSecurityListActive, 
+  .telecomsListActive, .softwareSolutionsListActive, .webSolutionsListActive, .digitalMarketingListActive, .graphicsListActive, .videoAnimationsListActive, .teleconferencingListActive{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 28%;
+    margin-top: 3rem;
+  }
+
+  .hardwareSolutionsList, .networkAdministrationList, .systemSecurityList, .telecomsList, .softwareSolutionsList, .webSolutionsList,
+  .digitalMarketingList, .graphicsList, .videoAnimationsList, .teleconferencingList{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    gap: 10px;
+    position: absolute;
+    margin-top: 3rem;
+  }
   
   @media screen and (max-width:480px) {
     .container{

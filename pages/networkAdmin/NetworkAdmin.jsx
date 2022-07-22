@@ -33,7 +33,7 @@ const netAdminHeader = {
   alignItems: 'center', 
   justifyContent: 'center', 
   gap: '3rem',
-  background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1655635643568-f30d5abc618a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80) center top / cover transparent',
+  background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("/images/networkServer.jpeg") center -100px / cover transparent',
 }
 
 const fancyBox = {
@@ -53,7 +53,8 @@ const fancyBox = {
     padding: "3rem",
     marginTop: "-64px",
     marginBottom: "32px",
-    backgroundColor: "rgba(255, 255, 255, 0.8)",
+    // backgroundColor: "rgba(255, 255, 255, 0.8)",
+    backgroundColor: "#34548c",
     backdropFilter: "saturate(200%) blur(30px)",
     boxShadow: "rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem",
 }
@@ -206,8 +207,9 @@ const NetworkAdmin = () => {
     <>
         <Box sx={netAdminHeader}>
           <Box sx={{textAlign: 'center'}}>
-            <Typography variant='body1' color='#fff' mb='1rem'>Manage, Monitor, Maintain, Secure, and Service Networks</Typography>
-            <Typography variant='h4' color="#fff">We're responsible for installing, implementing, <br /> and maintaining business applications for organizations</Typography>
+            <Typography variant='h4' color='#fff' mb='2rem'>Network Administration / Implementation</Typography>
+            <Typography variant='h5' color='#fff' mb='1rem'>Manage, Monitor, Maintain, Secure, and Service Networks</Typography>
+            <Typography variant='body1' color="#fff">We're responsible for installing, implementing, <br /> and maintaining business applications for organizations</Typography>
           </Box>
         </Box>
         <Box sx={fancyBox}>
@@ -234,11 +236,11 @@ const NetworkAdmin = () => {
               </Typography>
             </Box>
           </Box>
-          <Box sx={{background: '#e6e9ec', padding: '4rem', borderRadius: '0.75rem'}}>
+          <Box sx={{background: '#e6e9ec', borderRadius: '0.75rem'}}>
             <Box sx={{display: 'flex', gap: '4rem'}}>
               <Box component='div' sx={{flex: 1, padding: '2rem'}}>
                     {data.map((item)=> (
-                  <Box sx={{display: 'flex', gap: '2rem', marginBottom: '1rem'}}>
+                  <Box key={item.id} sx={{display: 'flex', gap: '2rem', marginBottom: '1rem'}}>
                       <Box style={circle} />
                       <Typography color='#34548c' alignSelf='center'>
                         {item.txt}
@@ -249,10 +251,10 @@ const NetworkAdmin = () => {
               <Box sx={{flex: '1'}}>
                 <Box sx={stackBox}>
                     <Box sx={stackCard1}>
-                      <img style={{width: '100%', height: '100%'}} src="https://images.unsplash.com/photo-1658258338048-c7f6c9d9330d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1229&q=80" alt="" />
+                      <img style={{width: '100%', height: '100%'}} src="/images/computer-network.webP" alt="" />
                     </Box>
                     <Box sx={stackCard2}>
-                      <img style={{width: '100%', height: '100%'}} src="https://images.unsplash.com/photo-1557264322-b44d383a2906?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+                      <img style={{width: '100%', height: '100%'}} src="/images/q3.jpg" alt="" />
                     </Box>
                 </Box>
               </Box>
@@ -262,9 +264,9 @@ const NetworkAdmin = () => {
         <Box mb={5}>
           <Box sx={{display: "flex", height: "350px"}}>
             <Box sx={{flex: 1, width: '500px'}}>
-              <img src="https://images.unsplash.com/photo-1655635643617-72e0b62b9278?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="" style={{width: "100%", height: "100%"}} />
+              <img src="/images/q4.jpg" alt="" style={{width: "100%", height: "100%"}} />
             </Box>
-            <Box sx={{flex: 1, background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1633613286848-e6f43bbafb8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")', backgroundPosition: '100% -60%', backgroundAttachment: "fixed", display: 'grid', placeItems: 'center'}}>
+            <Box sx={{flex: 1, background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/q1.webP")', backgroundPosition: '100% -60%', backgroundAttachment: "fixed", display: 'grid', placeItems: 'center'}}>
             <Typography variant='h6' textAlign='center' mt= {4} color="#fff" fontWeight={700}>WHY DO I NEED A NETWORK ADMINISTRATOR?</Typography>
               <Typography variant='body1' color="#fff" p={6}>
               Every organization that uses more than one computer or software platform needs a network administrator to coordinate and connect all the different systems; Configure network hardware such as servers, routers, and switches; Upgrade, repair, and maintain computer networks; and troubleshoot various network issues.
@@ -274,10 +276,10 @@ const NetworkAdmin = () => {
           </Box>
         </Box>
         <Box sx={{marginTop: '4rem'}}>
-          <Typography variant='h4' textAlign='center' color='#34548c'>Some of our recent completed projects</Typography>
+          <Typography variant='h4' textAlign='center' color='#34548c' textTransform='capitalize'>Some of our recent completed projects</Typography>
           <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
           <Box sx={fancyBox2}>
-            <Typography variant='subtitle1' textTransform='uppercase' maxWidth='80%' margin='auto' textAlign='center' marginBottom='1rem'>
+            <Typography variant='subtitle1' fontWeight={700} textTransform='uppercase' maxWidth='80%' margin='auto' textAlign='center' marginBottom='1rem'>
               Sub-contractor to pine-height system on networking/structured cabling of a 3 floor office building (48 points)
               LAN setup, Mounting of a 48U Rack, Termination of patch and installation of the various Networking devices(Routers, Switches, etc) on the
               Samsung Heavy Industry at LADOL
@@ -307,7 +309,7 @@ const NetworkAdmin = () => {
             </Splide>
             </Box>
           <Box sx={fancyBox2} margin='2rem 0'>
-            <Typography variant='subtitle1' textTransform='uppercase' maxWidth='80%' margin='auto' textAlign='center' marginBottom='1rem'>
+            <Typography variant='subtitle1' fontWeight={700} textTransform='uppercase' maxWidth='80%' margin='auto' textAlign='center' marginBottom='1rem'>
               Sub-contractor to pine-height system on networking/structured cabling of a 3 floor office building (48 points)
               LAN setup, Mounting of a 48U Rack, Termination of patch and installation of the various Networking devices(Routers, Switches, etc) on the
               Samsung Heavy Industry at LADOL
@@ -336,36 +338,6 @@ const NetworkAdmin = () => {
                   ))}
             </Splide>
             </Box>
-        </Box>
-        <Box sx={{marginBottom: '4rem'}}>
-        <Swiper
-        effect={"cube"}
-        grabCursor={true}
-        cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        }}
-        pagination={true}
-        modules={[EffectCube, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide style={{background: 'url("https://images.unsplash.com/photo-1429087969512-1e85aab2683d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")', backgroundSize: 'cover'}}>
-          {/* <img src="https://swiperjs.com/demos/images/nature-1.jpg" style={{width: '100%', height: '100%'}} /> */}
-          <Box sx={{marginTop: '20%'}}>
-              <Typography textAlign='center' variant='h6' color='#fff' fontWeight={700} marginBottom= '2rem'>Ready to discuss <br/> your Project?</Typography>
-            <Box sx={{textAlign: 'center'}}>
-                <Button variant="contained" endIcon={<SendIcon />}>
-                  Get a Quote
-                </Button>
-            </Box>
-          </Box>
-        </SwiperSlide>
-        <SwiperSlide style={{background: "url('https://images.unsplash.com/photo-1504470695779-75300268aa0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')"}}>
-          <img src="/logoAndIcons/logo2.png" style={{width: '100%', height: '100%'}} />
-        </SwiperSlide>
-      </Swiper>
         </Box>
     </>
   )
