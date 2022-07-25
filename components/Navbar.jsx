@@ -989,9 +989,11 @@ const Navbar = () => {
           <div className={styles.mainDropdown}>
               <div className={styles.mainDropdownLeft}>
                 <ul className={styles.mainDropdownLeftList}>
+                  <Link href='/whoWeAre/WhoWeAre'>
                     <li className={styles.mainDropdownLeftListItem}>
                     Our Company<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
                     </li>
+                  </Link>
                     <li className={styles.mainDropdownLeftListItem}>
                     Our Portfolio<span className={styles.displayArrow}><i className="fa fa-arrow-right" aria-hidden="true" /></span>
                     </li>
