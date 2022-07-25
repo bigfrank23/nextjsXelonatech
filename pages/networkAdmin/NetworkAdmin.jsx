@@ -170,35 +170,89 @@ const data = [
 const projects = [
   {
     id: uuidv4(),
-    img: '/images/NetworkingProjects/DSC06956.jpg',
+    img: '/images/networkAdministration/networkingProject1/IMG_2201.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/NetworkingProjects/DSC06958.jpg',
+    img: '/images/networkAdministration/networkingProject1/IMG_2213.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/NetworkingProjects/IMG_1939.jpg',
+    img: '/images/networkAdministration/networkingProject1/IMG_2218.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/NetworkingProjects/IMG_1940.jpg',
+    img: '/images/networkAdministration/networkingProject1/IMG_2220.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/NetworkingProjects/IMG_1964.jpg',
+    img: '/images/networkAdministration/networkingProject1/IMG_2228.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/NetworkingProjects/IMG_2213.jpg',
+    img: '/images/networkAdministration/networkingProject1/WP_001143.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/NetworkingProjects/IMG_2220.jpg',
+    img: '/images/networkAdministration/networkingProject1/WP_001152.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/NetworkingProjects/IMG-20130906-00178.jpg',
+    img: '/images/networkAdministration/networkingProject1/WP_001155.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject1/WP_001177.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject1/WP_001179.jpg',
+  },
+]
+const projects2 = [
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject2/IMG_1933.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject2/IMG_1938.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject2/IMG_1940.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject2/IMG_1941.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject2/IMG_1943.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject2/IMG_1944.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject2/IMG_1950.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject2/IMG_1952.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject2/IMG_1959.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject2/IMG_1962.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/networkAdministration/networkingProject2/IMG_1966.jpg',
   },
 ]
 
@@ -280,9 +334,7 @@ const NetworkAdmin = () => {
           <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
           <Box sx={fancyBox2}>
             <Typography variant='subtitle1' fontWeight={700} textTransform='uppercase' maxWidth='80%' margin='auto' textAlign='center' marginBottom='1rem'>
-              Sub-contractor to pine-height system on networking/structured cabling of a 3 floor office building (48 points)
-              LAN setup, Mounting of a 48U Rack, Termination of patch and installation of the various Networking devices(Routers, Switches, etc) on the
-              Samsung Heavy Industry at LADOL
+            Re-Routing/Reconnection of Network LAN (Ports, Face Plate, Floor Boxes and Patch Panel) of a 6 Floor Office Building (216 points) for Kunech Building (New Site) at Osapa, Jakande, Lekki
             </Typography>
               <Splide
                 options={{
@@ -310,9 +362,7 @@ const NetworkAdmin = () => {
             </Box>
           <Box sx={fancyBox2} margin='2rem 0'>
             <Typography variant='subtitle1' fontWeight={700} textTransform='uppercase' maxWidth='80%' margin='auto' textAlign='center' marginBottom='1rem'>
-              Sub-contractor to pine-height system on networking/structured cabling of a 3 floor office building (48 points)
-              LAN setup, Mounting of a 48U Rack, Termination of patch and installation of the various Networking devices(Routers, Switches, etc) on the
-              Samsung Heavy Industry at LADOL
+            Sub-Contractor to PINE HEIGHT SYSTEMS on Network Engineering of a 3 Floor office Building (48 Points) LAN Setup, Mounting of a 48u Rack, termination of Patch and installation of the various networking devices (routers, switches, etc.) on the rack for Samsung Heavy Industry at LADOL
             </Typography>
               <Splide
                 options={{
@@ -331,7 +381,7 @@ const NetworkAdmin = () => {
                 extensions={{ AutoScroll }}
                 style={{padding: '0 5rem'}}
               >
-                  {projects.map((project)=> (
+                  {projects2.map((project)=> (
                     <SplideSlide key={project.id}>
                         <img src={project.img} style={{width: '470px', height: '300px', objectFit: 'cover'}} alt="Image 1" />
                     </SplideSlide>

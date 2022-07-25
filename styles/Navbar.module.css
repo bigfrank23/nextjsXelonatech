@@ -235,15 +235,30 @@
   }
 
   /* New Nav */
+  
   .innerListContainer{
     background-color: #fff;
     color: #000;
-    display: flex;
+    /* display: none; */
+    /* opacity: 0; */
+    visibility: hidden;
     list-style: none;
     margin-top: 55rem;
     position: absolute;
-    left: 0%;
-    top: -580%;
+    left: 20%;
+    top: -815%;
+  }
+  .listItem:hover .innerListContainer{
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    opacity: 1;
+    list-style: none;
+    visibility: visible;
+    margin-top: 55rem;
+    position: absolute;
+    left: 20%;
+    top: -825%;
   }
   .innerListItemLeft, .innerListItemRight{
     padding: 1rem;
@@ -253,8 +268,29 @@
     padding: 0;
     margin: 0;
   }
-  .innerListContentLeft{
+  /* .innerListContentLeft{
     border-right: 1px solid #ccc;
+  } */
+
+  .line{
+    width: 2px;
+    height: 150px !important;
+    background: #000;
+  }
+
+  .innerListItemContentLeftActive{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: red;
+    border-radius: 1rem;
+    /* margin-bottom: 1rem; */
+    font-size: 12px;
+    padding: 1rem;
+    width: 160px;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: border-radius .5s ease;
   }
 
   .innerListItemContentLeft{
@@ -269,11 +305,11 @@
     border-radius: 1rem;
     transition: border-radius .5s ease;
   }
-  .innerListItemContentLeft:hover{
+  /* .innerListItemContentLeft:hover{
     color: #fff;
     background-color: red;
     border-radius: 1rem;
-  }
+  } */
 
   /* right */
   .innerListItemContentRight{
@@ -293,9 +329,29 @@
   .innerListItemContentRightTechList, .innerListItemContentRightDigitalList, .innerListItemContentRightSalesList{
     display: none;
   }
+
+  .innerListItemContentRightTechListTitleActive{
+    color: red;
+  }
+  .innerListItemContentRightTechListTitle{
+    color: #222;
+  }
   
   .hardwareSolutionsListActive, .networkAdministrationListActive, .systemSecurityListActive, 
-  .telecomsListActive, .softwareSolutionsListActive, .webSolutionsListActive, .digitalMarketingListActive, .graphicsListActive, .videoAnimationsListActive, .teleconferencingListActive{
+  .telecomsListActive, .softwareSolutionsListActive{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    left: 23%;
+    margin-top: 3rem;
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .webSolutionsListActive, .digitalMarketingListActive, .graphicsListActive, .videoAnimationsListActive, .teleconferencingListActive{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -304,6 +360,8 @@
     position: absolute;
     left: 28%;
     margin-top: 3rem;
+    font-size: 9px;
+    text-align: center;
   }
 
   .hardwareSolutionsList, .networkAdministrationList, .systemSecurityList, .telecomsList, .softwareSolutionsList, .webSolutionsList,
