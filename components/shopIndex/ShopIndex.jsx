@@ -149,6 +149,7 @@ const ShopIndex = () => {
         itemClass="px-3"
         autoPlay
         infinite
+        showDots={false}
         >
           {items.map((item, i)=> (
             <Card sx={{ maxWidth: 345, boxShadow: '2px 22px 22px  pink' }} key={item.id}>

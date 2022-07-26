@@ -17,6 +17,7 @@ const HeroSection = () => {
     <div style={{height: '50vh'}}>
         <AutoplaySlider
         animation="fallAnimation"
+        organicArrows={false}
         play={true}
         cancelOnInteraction={true} // should stop playing on user interaction
         interval={3000}

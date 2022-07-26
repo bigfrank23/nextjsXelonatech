@@ -22,10 +22,10 @@ export default function Home() {
         <title>Elonatech Nigeria Limited</title>
         <meta name="description" content="Welcome to Elonatech Nigeria Limited Website" />
         <link rel="icon" href="/favicon.ico" />
+      </Head>
         <Script src="https://code.jquery.com/jquery-3.5.1.min.js"></Script>
         <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></Script>
         <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></Script>
-      </Head>
       {/* <div className="container-fluid"> */}
         {/* <HeroSection/> */}
         <HeroSection1 />
@@ -33,10 +33,10 @@ export default function Home() {
         <CardIndex2 />
         <HeroBanner1 />
         <WhatWeDoBest />
-        <Testimonial />
-        <BlogIndex />
-        <ShopIndex />
         <OurClients />
+        <Testimonial />
+        <ShopIndex />
+        <BlogIndex />
       {/* </div> */}
     </div>
   )

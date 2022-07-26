@@ -104,19 +104,20 @@ const OurClients = () => {
         },
       };
   return (
-    <div className='container' style={{marginBottom: '9rem'}}>
-        <h3 className="text-center" style={{color: '#34548c'}}>Some of our clients</h3>
+    <div className='container'>
+        <h3 className="text-center" style={{color: '#34548c', textTransform: 'capitalize'}}>Some of our clients</h3>
         <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
-        <Paper sx={{p: '3rem'}}>
+        <Box sx={{p: '3rem'}}>
             <Carousel
                 // showDots={true}
                 responsive={responsive}
                 containerClass="carousel-container"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 itemClass="px-3"
-                customTransition="all 5"
-                transitionDuration={2000}
-                autoPlay
+                // customTransition="all 5"
+                // transitionDuration={500}
+                autoPlay={true}
+                autoPlaySpeed={2000}
                 // showDots='false'
                 rewindWithAnimation='true'
                 arrows={false}
@@ -125,12 +126,12 @@ const OurClients = () => {
                     {items.map((item)=> (
                         // <Grid item>
                             <Box key={item.id} sx={{mb: '2rem'}}>
-                                <img src={item.img} alt="client-logo" width={80} height='auto' />
+                                <img src={item.img} alt="client-logo" width={100} style={{background:'#fff'}} height='auto' />
                             </Box>
                         // </Grid>
                     ))}
             </Carousel>
-        </Paper>
+        </Box>
     </div>
   )
 }

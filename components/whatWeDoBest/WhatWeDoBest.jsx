@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 const WhatWeDoBest = () => {
   return (
-    <div className='container' style={{marginBottom: '9rem'}}>
-        <h3 className="text-center" style={{color: '#34548c'}}>What we do best</h3>
+    <div className='container' style={{marginBottom: '5rem'}}>
+        <h3 className="text-center" style={{color: '#34548c'}}>What We Do Best</h3>
         <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
         <div className={styles.rowd}>
             <div className={styles.WhatWeDoBestCard}>

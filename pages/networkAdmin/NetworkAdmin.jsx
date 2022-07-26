@@ -22,7 +22,7 @@ import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
 // import required modules
-import { EffectCube, Pagination } from "swiper";
+// import { EffectCube, Pagination } from "swiper";
 
 const netAdminHeader = {
   height: "50vh !important",
@@ -263,7 +263,7 @@ const NetworkAdmin = () => {
           <Box sx={{textAlign: 'center'}}>
             <Typography variant='h4' color='#fff' mb='2rem'>Network Administration / Implementation</Typography>
             <Typography variant='h5' color='#fff' mb='1rem'>Manage, Monitor, Maintain, Secure, and Service Networks</Typography>
-            <Typography variant='body1' color="#fff">We're responsible for installing, implementing, <br /> and maintaining business applications for organizations</Typography>
+            <Typography variant='body1' color="#fff">We&apos;re responsible for installing, implementing, <br /> and maintaining business applications for organizations</Typography>
           </Box>
         </Box>
         <Box sx={fancyBox}>
@@ -271,7 +271,7 @@ const NetworkAdmin = () => {
             <Box sx={glassEffect}>
               <Typography variant='h5' mb='1rem' color='#34548c'>Implementation</Typography>
               <Typography variant='body1' mb='1rem'>
-                Due to the demands of today's growing economy and virtual IT environments, Organizations are beginning to rely on scalable and reliable IT infrastructure. Elonatech helps clients determine  most effective technologies that will provide maximum productivity. Whether your business is looking to build a whole new network in an already existing area or to add on to your existing infrastructure, we will design it from conceptualization, with all of your needs in mind.
+                Due to the demands of today&apos;s growing economy and virtual IT environments, Organizations are beginning to rely on scalable and reliable IT infrastructure. Elonatech helps clients determine  most effective technologies that will provide maximum productivity. Whether your business is looking to build a whole new network in an already existing area or to add on to your existing infrastructure, we will design it from conceptualization, with all of your needs in mind.
               </Typography>
               <Typography variant='body1'>
                 We understand the importance of covering all your installation needs to make the implementation stage seamless. We install networks which includes deploying the hardware (routers, switches, firewalls, access points, servers, racks, etc.) as well as implementing the physical cabling infrastructure (Cat 5e, Cat 6 and Fiber cabling) and secure wireless setup to guarantee business protection.
@@ -280,7 +280,7 @@ const NetworkAdmin = () => {
             <Box sx={glassEffect}>
               <Typography variant='h5' mb='1rem' color='#34548c'>Administration</Typography>
               <Typography variant='body1' mb='1rem'>
-                Network administration aims to ensure a reliable, secure network conducive to business operations. Network administration primarily consists of, but isn't limited to, network monitoring, network management, and maintaining network quality and security.
+                Network administration aims to ensure a reliable, secure network conducive to business operations. Network administration primarily consists of, but isn&apos;t limited to, network monitoring, network management, and maintaining network quality and security.
               </Typography>
               <Typography variant='body1' mb='1rem'>
                 Elonatech supports all the networks we implement and support existing ones. Any issues you have from desktops and laptops to servers, networking hardware and printers we will assess, investigate and proffer a solution. We offer backup consultation and configuration both onsite and offsite, hardware recommendations, upgrading existing installations and remote access consultation and configuration.

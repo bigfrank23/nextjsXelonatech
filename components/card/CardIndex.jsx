@@ -7,9 +7,9 @@ const CardIndex = () => {
   return (
     <div className="container my-5">
       <div className="whatWeDoTitle" style={{marginTop: '15rem', marginBottom: '3rem'}}>
-            <h2 className="text-center" style={{color: '#34548c'}}>Why elonatech</h2>
+            <h2 className="text-center" style={{color: '#34548c'}}>Why Elonatech</h2>
             <hr className="m-auto my-3" style={{background: 'red', width: '50px', height: "2px"}}/>
-            <h4 className="text-center text-secondary">Top-notch technology service providers</h4>
+            <h4 className="text-center text-secondary">Top-notch Technology Service Providers</h4>
       </div>
         <Box
             sx={{

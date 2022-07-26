@@ -64,7 +64,7 @@ const WhoWeAre = () => {
           <Box sx={{flex: 1}} padding='2rem'>
             <Typography variant="h5" fontWeight='700' textAlign='center' mb='1rem'>WHO WE ARE</Typography>
             <Typography variant="subtitle1" fontWeight='700'>
-              Elonatech Nigeria Limited is a diversified company in pursuit of excellence in ‘IT’. Our company's logistical services are designed for the top-of-the-market corporate clientele; we serve to keep you above the turmoil of working in today's Nigeria. Our company is managed and structured to achieve effective results, even to the most challenging client requirement. This, we believe, forms the foundation for mutually beneficial, long-term partnerships and we ensure that we reach our goal of adding value to our client’s processes. We Endeavour to exceed our clients’ expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard.
+              Elonatech Nigeria Limited is a diversified company in pursuit of excellence in &apos;IT&apos;. Our company&apos;s logistical services are designed for the top-of-the-market corporate clientele; we serve to keep you above the turmoil of working in today&apos;s Nigeria. Our company is managed and structured to achieve effective results, even to the most challenging client requirement. This, we believe, forms the foundation for mutually beneficial, long-term partnerships and we ensure that we reach our goal of adding value to our client&apos;s processes. We Endeavour to exceed our clients&apos; expectations with the solutions we provide, and aim at pricing our solutions and services competitively and deliver projects within budget while continuously striving to maintain premium quality and standard.
             </Typography>
           </Box>
         </Box>
@@ -74,7 +74,7 @@ const WhoWeAre = () => {
           <Box sx={{flex: 1}} padding='2rem'>
             <Typography variant="subtitle1" fontWeight='700' textAlign='center' mb='1rem'>...who we are</Typography>
             <Typography variant="subtitle1" fontWeight='700'>
-            We offer a comprehensive package which includes: Computer sales (Client and Servers) and Maintenance, hardware and software engineering, Network deployment and Server administration, internet solutions, Graphic design and Branding, Web design and Development, Digital Marketing, Video editing, Live Streaming and Video Conferencing, sales, repair and configuration of Smart Phones, CRMs & ERPs, Bulk SMS, and other ‘IT’ related services your organization needs.
+            We offer a comprehensive package which includes: Computer sales (Client and Servers) and Maintenance, hardware and software engineering, Network deployment and Server administration, internet solutions, Graphic design and Branding, Web design and Development, Digital Marketing, Video editing, Live Streaming and Video Conferencing, sales, repair and configuration of Smart Phones, CRMs & ERPs, Bulk SMS, and other &apos;IT&apos; related services your organization needs.
             </Typography>
           </Box>
           <Box sx={{flex: 1, alignSelf: 'center', height: '450px'}}><img src="/images/heroImg/img1.jpg" alt="" style={{width: '100%', height: '100%', objectFit: 'cover'}} /></Box>
@@ -87,7 +87,7 @@ const WhoWeAre = () => {
             <Typography variant="subtitle1" fontWeight='700' textAlign='center' mb='1rem'>...who we are</Typography>
             <Typography variant="subtitle1" fontWeight='700'>
             We are innovative in sustaining existing services while creating and maintaining new services to meet the needs of the increasingly sophisticated corporate clientele. We have continued to expand our range of services around their needs.
-            The emphasis here is providing service facilities designed to suit client’s particular requirements, realizing that each client has his own unique corporate need.
+            The emphasis here is providing service facilities designed to suit client&apos;s particular requirements, realizing that each client has his own unique corporate need.
             </Typography>
           </Box>
         </Box>

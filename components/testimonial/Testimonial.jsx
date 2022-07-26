@@ -4,11 +4,11 @@ import styles from '../../styles/Testimonial.module.css'
 const Testimonial = () => {
   return (
 	// <div className="container-fluid" style={{background: 'url("https://img.freepik.com/free-photo/gray-abstract-wireframe-technology-background_53876-101941.jpg?w=900&t=st=1657196577~exp=1657197177~hmac=73ecedae55e2ae551796e6500c0bb9fdfeacb5c2fc888a9db216ce9e5253001d")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
-		<div className="container-lg" style={{marginBottom: '9rem'}}>
+		<div className="container-lg" style={{marginBottom: '5rem'}}>
 		<div className="row">
 			<div className="col-sm-12">			
 				<div id="myCarousel" className="carousel slide" data-ride="carousel">
-					<h3 className='text-center' style={{color: '#34548c'}}>What others say about us</h3>
+					<h3 className='text-center' style={{color: '#34548c', textTransform: 'capitalize'}}>What others say about us</h3>
 					<hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
 					{/* Carousel indicators */}
 					<ol className="carousel-indicators">
@@ -45,7 +45,7 @@ const Testimonial = () => {
 								</div>
 								<div className="col-sm-6">
 									<div className="testimonial">
-										<p>In the past, I've been 'held hostage' by techie people who talk over my head. I clicked with Elonatech Nigeria Ltd. from the start because they are so down to earth and more than willing to do a great job for their clients. Elonatech Nigeria Ltd. is a professional company with a real commitment to provide excellent technical expertise and incredibly good customer service. I haven't found this from many other providers.</p>
+										<p>In the past, I&apos;ve been &apos;held hostage&apos; by techie people who talk over my head. I clicked with Elonatech Nigeria Ltd. from the start because they are so down to earth and more than willing to do a great job for their clients. Elonatech Nigeria Ltd. is a professional company with a real commitment to provide excellent technical expertise and incredibly good customer service. I haven&apos;t found this from many other providers.</p>
 									</div>
 									<div className="media">
 										<img src="/images/testimonialsImg/Remeben-MD-1.png" className="mr-3" alt="Benjamin Miachi" />
@@ -96,7 +96,7 @@ const Testimonial = () => {
 								<div className="col-sm-6">
 									<div className="testimonial">
 										<p>
-										I have worked with other web designers before but was never satisfied with the end result. From start to finish my interaction with the team at Elonatech was professional, stress-free and I had complete trust in their ability to deliver. Their difference is: They took the time to listen to what I wanted but also brought their own ideas, experience and creativity so that the end design was more rounded. They understood that I needed to see things in a visual context and have some flexibility to 'play' around with a few ideas. All of this was done face to face at their office making the process highly personal. </p>
+										I have worked with other web designers before but was never satisfied with the end result. From start to finish my interaction with the team at Elonatech was professional, stress-free and I had complete trust in their ability to deliver. Their difference is: They took the time to listen to what I wanted but also brought their own ideas, experience and creativity so that the end design was more rounded. They understood that I needed to see things in a visual context and have some flexibility to &apos;play&apos; around with a few ideas. All of this was done face to face at their office making the process highly personal. </p>
 									</div>
 									<div className="media">
 										<img src="/images/testimonialsImg/Abayomi-Kakanfo.jpg" className="mr-3" alt="Abayomi Kakanfo" />
@@ -148,7 +148,7 @@ const Testimonial = () => {
 								</div>
 								<div className="col-sm-6">
 									<div className="testimonial">
-										<p>Safebrooks Nigeria Limited" relies on Elonatech for it's digital marketing and web development expertise, with a particular focus on the area of social media marketing and digital advertising. Elonatech provides the best advice and is superbly knowledgeable as well as being fully committed and responsive to our needs and supporting the ideas and initiatives we have presented.
+										<p>Safebrooks Nigeria Limited&apos;&apos; relies on Elonatech for it&apos;s digital marketing and web development expertise, with a particular focus on the area of social media marketing and digital advertising. Elonatech provides the best advice and is superbly knowledgeable as well as being fully committed and responsive to our needs and supporting the ideas and initiatives we have presented.
 											Oreva and all of the team at Elonatech have become invaluable partners for our company in creating brand awareness and being instrumental in generating new business ideas.</p>
 									</div>
 									<div className="media">
@@ -176,12 +176,12 @@ const Testimonial = () => {
 						</div>
 					</div>
 					{/* Carousel controls */}
-					<a className="carousel-control-prev" href="#myCarousel" data-slide="prev">
+					{/* <a className="carousel-control-prev" href="#myCarousel" data-slide="prev">
 						<i className="fa fa-chevron-left"></i>
 					</a>
 					<a className="carousel-control-next" href="#myCarousel" data-slide="next">
 						<i className="fa fa-chevron-right"></i>
-					</a>
+					</a> */}
 				</div>
 			</div>
 		</div>

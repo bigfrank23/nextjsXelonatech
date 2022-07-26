@@ -172,11 +172,15 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
         <div className={styles.logoBox}>
-          {/* <Image src="/logoAndIcons/logo.png" alt="elonatechLogo" width="200px" height="100%" /> */}
+          <Link href='/'>
           <img src="/logoAndIcons/logo.png" alt="elonatechLogo" width="200px" height="100%"  />
+          </Link>
+          {/* <Image src="/logoAndIcons/logo.png" alt="elonatechLogo" width="200px" height="100%" /> */}
       </div>
         <ul className={styles.list}>
-          <li className={styles.listItem}><i className="fa fa-home" aria-hidden="true" /></li>
+          <Link href='/'>
+            <li className={styles.listItem}><i className="fa fa-home" aria-hidden="true" /></li>
+          </Link>
 
           {/* Solutions */}
           <li className={styles.listItem}>Solutions <span><i className="fa fa-angle-down" aria-hidden="true" /></span>
@@ -380,16 +384,29 @@ const Navbar = () => {
                     <li className={styles.innerListItemContentRight}>
                       <ul className={salesMouseEnter ? styles.innerListItemContentRightSalesListActive : styles.innerListItemContentRightSalesList}>
                         <li className={styles.innerListItemContentRightSalesListItem}>
+                          {/* <h6 className={salesMouseEnter? styles.innerListItemContentRightTechListTitleActive : styles.innerListItemContentRightTechListTitle}>Computer Equipments</h6> */}
                           <img src="https://img.icons8.com/ios/50/000000/workstation.png" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: 'center', marginBottom: '1rem'}}/>
-                          <h6 className={salesMouseEnter? styles.innerListItemContentRightTechListTitleActive : styles.innerListItemContentRightTechListTitle}>Computer Equipments</h6>
+                          Computer Equipments
                         </li>
                         <li className={styles.innerListItemContentRightSalesListItem}>
+                          {/* <h6 className={styles.innerListItemContentRightTechListTitleActive}>Printers, Copiers, Scanners</h6> */}
                           <img src="https://img.icons8.com/external-simple-solid-edt.graphics/50/000000/external-Printer-printers-simple-solid-edt.graphics-10.png" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: 'center', marginBottom: '1rem'}}/>
-                          <h6 className={styles.innerListItemContentRightTechListTitleActive}>Printers, Copiers, Scanners</h6>
+                          Printers, Copiers, Scanners
                           </li>
                         <li className={styles.innerListItemContentRightSalesListItem}>
+                          {/* <h6 className={styles.innerListItemContentRightTechListTitleActive}>Office Equipments</h6> */}
                         <img src="https://img.icons8.com/dotty/80/000000/home-office.png" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: 'center', marginBottom: '1rem'}}/>
-                          <h6 className={styles.innerListItemContentRightTechListTitleActive}>Office Equipments</h6>
+                        Office Equipments
+                        </li>
+                        <li className={styles.innerListItemContentRightSalesListItem}>
+                          {/* <h6 className={styles.innerListItemContentRightTechListTitleActive}>Office Equipments</h6> */}
+                        <img src="https://img.icons8.com/external-itim2101-fill-itim2101/64/1A1A1A/external-networking-network-technology-itim2101-fill-itim2101-1.png" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: 'center', marginBottom: '1rem'}}/>
+                        Networking Equipments
+                        </li>
+                        <li className={styles.innerListItemContentRightSalesListItem}>
+                          {/* <h6 className={styles.innerListItemContentRightTechListTitleActive}>Office Equipments</h6> */}
+                        <img src="https://img.icons8.com/ios/50/000000/receipt-terminal.png" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: 'center', marginBottom: '1rem'}}/>
+                        POS System
                         </li>
                       </ul>
                     </li>
