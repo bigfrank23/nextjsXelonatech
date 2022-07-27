@@ -35,6 +35,12 @@ const thirdBox = {
 const WhoWeAre = () => {
   return (
     <>
+    <Head>
+      {/* <meta name="viewport" content="width=device-width,initial-scale=1"/> */}
+        <title>Who We Are</title>
+        <meta name="description" content="About Elonatech Nigeria Limited Website" />
+        {/* <link rel="icon" href="/elona-icon.png" /> */}
+      </Head>
     <Box sx={whoWeAreHeader}>
           <Box sx={{textAlign: 'center'}}>
             <Typography variant='h4' color='#fff' mb='2rem'>About Elonatech</Typography>
