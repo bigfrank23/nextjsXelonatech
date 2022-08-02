@@ -104,8 +104,8 @@ const Computers = () => {
                     {/* <Typography> */}
                     We do all kinds of laptop, desktop and server repair of all makes and models, 
                     including Windows, Apples (Mac) and Linux computers. We do virus removal without 
-                    reformatting so you don't lose your important files or photos. We repair both 
-                    hardware and software. We have no queue so come any time and we'll start fixing 
+                    reformatting so you don&apos;t lose your important files or photos. We repair both 
+                    hardware and software. We have no queue so come any time and we&apos;ll start fixing 
                     your computer right away. We offer Pick-up, Walk-in, On-Premise, and Remote Support 
                     repair services.
                     {/* </Typography> */}

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+// import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -35,12 +35,7 @@ const thirdBox = {
 const WhoWeAre = () => {
   return (
     <>
-    <Head>
-      {/* <meta name="viewport" content="width=device-width,initial-scale=1"/> */}
-        <title>Who We Are</title>
-        <meta name="description" content="About Elonatech Nigeria Limited Website" />
-        {/* <link rel="icon" href="/elona-icon.png" /> */}
-      </Head>
+    
     <Box sx={whoWeAreHeader}>
           <Box sx={{textAlign: 'center'}}>
             <Typography variant='h4' color='#fff' mb='2rem'>About Elonatech</Typography>
@@ -122,7 +117,7 @@ const WhoWeAre = () => {
       </div>
     </div>
     <div className="whoWeAreBox">
-        <div className="content">
+        <div className="content" style={{background: 'url("/images/banner.png")', backgroundSize: '100%', backgroundRepeat: 'no-repeat'}}>
     <img src="/logoAndIcons/logo2.png"  alt="Italy / Urban / Street / City" />
             <div className="text1"><b>Contact</b></div>
             <div className="text2"><b>Us Now</b></div>

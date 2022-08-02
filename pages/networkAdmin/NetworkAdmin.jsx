@@ -346,16 +346,16 @@ const NetworkAdmin = () => {
                   autoScroll: {
                     pauseOnHover: true,
                     pauseOnFocus: false,
-                    rewind: false,
+                    rewind: true,
                     speed: 1
                   }
                 }}
                 extensions={{ AutoScroll }}
-                style={{padding: '0 5rem'}}
+                // style={{padding: '0 5rem'}}
               >
                   {projects.map((project)=> (
                     <SplideSlide key={project.id}>
-                        <img src={project.img} style={{width: '470px', height: '300px', objectFit: 'cover'}} alt="Image 1" />
+                        <img src={project.img} style={{width: '450px', height: '350px'}} alt="Image 1" />
                     </SplideSlide>
                   ))}
             </Splide>
@@ -374,19 +374,22 @@ const NetworkAdmin = () => {
                   autoScroll: {
                     pauseOnHover: true,
                     pauseOnFocus: false,
-                    rewind: false,
+                    rewind: true,
                     speed: 1
                   }
                 }}
                 extensions={{ AutoScroll }}
-                style={{padding: '0 5rem'}}
+                // style={{padding: '0 5rem'}}
               >
                   {projects2.map((project)=> (
                     <SplideSlide key={project.id}>
-                        <img src={project.img} style={{width: '470px', height: '300px', objectFit: 'cover'}} alt="Image 1" />
+                        <img src={project.img} style={{width: '450px', height: '350px'}} alt="Image 1" />
                     </SplideSlide>
                   ))}
             </Splide>
+            </Box>
+            <Box>
+              <Box sx={{width: '100%', height: '300px', background: 'url("/images/banner2.png")', backgroundRepeat: 'no-repeat'}} />
             </Box>
         </Box>
     </>

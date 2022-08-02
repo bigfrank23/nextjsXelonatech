@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { Box, Typography, Divider, Card, CardContent, IconButton, CardMedia, Button, Paper } from '@mui/material'
 import DownloadIcon from '@mui/icons-material/Download';
 import { useTheme } from '@mui/material/styles';
@@ -34,6 +35,12 @@ const WhoWeAre2 = () => {
     };
   return (
     <>
+    <Head>
+      {/* <meta name="viewport" content="width=device-width,initial-scale=1"/> */}
+        <title>Who We Are</title>
+        <meta name="description" content="About Elonatech Nigeria Limited Website" />
+        {/* <link rel="icon" href="/elona-icon.png" /> */}
+    </Head>
     <Box sx={whoWeAreHeader}>
         <Box sx={{textAlign: 'center'}}>
         <Typography variant='h4' color='#fff' mb='2rem'>About Elonatech</Typography>
@@ -139,7 +146,7 @@ const WhoWeAre2 = () => {
             <Typography variant="subtitle1" color="text.secondary" component="div">
                 Limited
             </Typography>
-            <Typography color='#34548c'>Company's Profile</Typography>
+            <Typography color='#34548c'>Company&apos;s Profile</Typography>
             </CardContent>
             <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
             <Button variant='outlined' color='error' onClick={handleDownload} startIcon={<DownloadIcon />}>Download</Button>

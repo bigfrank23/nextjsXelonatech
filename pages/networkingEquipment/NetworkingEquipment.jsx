@@ -71,7 +71,7 @@ const NetworkingEquipment = () => {
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Printer
+                Networking Equipment
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
