@@ -178,15 +178,6 @@ const whoWeAreHeader = {
 
     ]
 
-    const bull = (
-        <Box
-          component="span"
-          sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-        >
-          •
-        </Box>
-      );
-
       const datas = [
         {
             id: uuidv4(),
@@ -238,13 +229,13 @@ const whoWeAreHeader = {
         <Typography variant='h5' color='#34548c'>Need A Website For Your Brand?</Typography>
         <hr className='my-2' style={{background: 'red', width: "50px", height: "2px"}} />
         <Typography variant='body2' my={2}>
-        Well, You Have Come To The Right Place, At Pejul Digital Agency, We Pride Ourselves To Be One Of Lagos' Leading Website Design & Development Company Whos Core Value is Transparency And Results
+        Well, You Have Come To The Right Place, At Pejul Digital Agency, We Pride Ourselves To Be One Of Lagos&apos; Leading Website Design & Development Company Whos Core Value is Transparency And Results
         </Typography>
         <Typography variant='body2' my={2}>
         We Design & Develop All Types Of Websites And Web Application At The Lowest Rate Possible. We  Also Provide Other Premium Services Like Business Software Development, Mobile App Development, Online Advertisments Like Google Ads, Youtube Ads, Display Ads And Even Consultation  & Training Services. 
         </Typography>
         <Typography variant='body2' my={2}>
-        We won't just build you an ordinary website but also develop a marketing strategy that can utilize the website and your marketing channels to generate constant leads, sales, customers, and clients.
+        We won&apos;t just build you an ordinary website but also develop a marketing strategy that can utilize the website and your marketing channels to generate constant leads, sales, customers, and clients.
         </Typography>
         <Typography variant='body2' my={2}>
         If you are ready to become the best in your industry and also stand out from a sea of hungry competitors, then Pejul Digital Agency is the partner you need. Get in touch with us below, lets take your business to the next level
@@ -324,8 +315,14 @@ const whoWeAreHeader = {
     <Box sx={{background: 'linear-gradient(90deg, #021048 0%, #1E38A3 100%)', padding: '5rem 10rem 5rem 10rem', display: 'flex', justifyContent: 'center'}}>
         <Box sx={{maxWidth: '80%'}}>
             <Typography variant='h4' mb={3} textAlign='center' color='#fff'>Why You Should Work With Us</Typography>
-            <Typography variant='h6' textAlign='center' color='#fff'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam reiciendis nemo ab neque corporis, recusandae sapiente mollitia corrupti consequatur earum quis optio saepe? Saepe cupiditate sapiente enim totam dolorum. Corrupti?</Typography>
-            <Typography variant='h6' textAlign='center' color='#fff'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam reiciendis nemo ab neque corporis,</Typography>
+            <Typography variant='h6' textAlign='center' color='#fff'>
+            The Websites we build are not only visually beautiful, scalable,  functional, but with a great degree of usability.
+            We also ensure your website ranks high on most of the major search engines, Google, Yahoo, Bing etc.
+            </Typography>
+            <Box sx={{textAlign: 'center', mt: 3}}>
+                <Button variant='contained' color='error'>View All</Button>
+            </Box>
+            {/* <Typography variant='h6' textAlign='center' color='#fff'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam reiciendis nemo ab neque corporis,</Typography> */}
         </Box>
     </Box>
     
@@ -395,8 +392,8 @@ const whoWeAreHeader = {
             <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} swipeable={true} stopOnHover={true}>
             {datas.map((data)=> (
                 <Box key={data.id}>
-                    <img src="/logoAndIcons/blackLogo.png" alt="black-logo" style={{width: '30px', height: '30px'}} />
-                    <Typography variant='h6' fontWeight={600} mb={2}>{data.h1}</Typography>
+                    <img src="/logoAndIcons/logo2.png" alt="black-logo" style={{width: '30px', height: '30px'}} />
+                    <Typography variant='h6' color='#34548c' fontWeight={600} mb={2}>{data.h1}</Typography>
                     <Typography variant='subtitle1'>{data.p}</Typography>
                 </Box>
             ))}

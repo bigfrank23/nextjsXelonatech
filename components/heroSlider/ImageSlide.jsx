@@ -39,7 +39,7 @@ const ImageSlider = () => {
           <Slider {...settings}>
             {images.map((item) => (
               <div key={item.id}>
-                <img src={item.src}  alt={item.alt} style={{width: "100%", height: "500px", objectFit: "cover"}} />
+                <img loading="lazy" src={item.src}  alt={item.alt} style={{width: "100%", height: "500px", objectFit: "cover"}} />
                 {/* <a name="" id="" class="btn btn-primary" href="#" role="button">Button</a> */}
               </div>
             ))}

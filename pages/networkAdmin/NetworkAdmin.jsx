@@ -316,13 +316,13 @@ const NetworkAdmin = () => {
           </Box>
         </Box>
         <Box mb={5}>
-          <Box sx={{display: "flex", height: "350px"}}>
-            <Box sx={{flex: 1, width: '500px'}}>
-              <img src="/images/q4.jpg" alt="" style={{width: "100%", height: "100%"}} />
+          <Box sx={{display: "flex", gap: '2rem', justifyContent: 'center', background: '#34548c', padding: '2rem'}}>
+            <Box sx={{width: '500px'}}>
+              <img src="/images/q4.jpg" alt="" style={{width: "100%", height: "100%", borderRadius: '10px'}} />
             </Box>
-            <Box sx={{flex: 1, background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/q1.webP")', backgroundPosition: '100% -60%', backgroundAttachment: "fixed", display: 'grid', placeItems: 'center'}}>
-            <Typography variant='h6' textAlign='center' mt= {4} color="#fff" fontWeight={700}>WHY DO I NEED A NETWORK ADMINISTRATOR?</Typography>
-              <Typography variant='body1' color="#fff" p={6}>
+            <Box sx={{width: '600px', background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/q1.webP")', padding: '2rem', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', borderRadius: '10px', display: 'grid', placeItems: 'center'}}>
+            <Typography variant='h6' textAlign='center' color="#fff" fontWeight={700}>WHY DO I NEED A NETWORK ADMINISTRATOR?</Typography>
+              <Typography variant='body1' color="#fff">
               Every organization that uses more than one computer or software platform needs a network administrator to coordinate and connect all the different systems; Configure network hardware such as servers, routers, and switches; Upgrade, repair, and maintain computer networks; and troubleshoot various network issues.
               Sharing resources and information among different computer systems within departments and accessing information from a database is essential for fast and efficient running of a company’s business and day-to-day activities. At ELONATECH, we implement and design both complex and simple data/voice local area networks for all types of organizations/institutions.
               </Typography>
@@ -389,7 +389,13 @@ const NetworkAdmin = () => {
             </Splide>
             </Box>
             <Box>
-              <Box sx={{width: '100%', height: '300px', background: 'url("/images/banner2.png")', backgroundRepeat: 'no-repeat'}} />
+              {/* <Box sx={{width: '100%', height: '300px', background: 'url("/images/banner2.png")', backgroundRepeat: 'no-repeat'}}> */}
+                <img src='/images/banner2.png' alt='' style={{width: '100%', height: '350px'}} />
+                {/* <Box sx={{position: 'absolute', zIndex: 1, transform: 'translate(75px, -40px)'}}>
+                  <Typography variant='h5' color='#fff'>Ready to start a project ?</Typography>
+                  <Button variant='contained' color='primary'>Call Now</Button>
+                </Box> */}
+              {/* </Box> */}
             </Box>
         </Box>
     </>

@@ -187,21 +187,25 @@ const Navbar = () => {
                             <Link href='/computers/Computers'>
                               <li className={styles.hardwareSolutionsListItem}>
                               <img src="https://img.icons8.com/dotty/80/000000/computer.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
-                                Computers
+                              Computer Engineering
                               </li>
                             </Link>
-                            <li className={styles.hardwareSolutionsListItem}>
-                            <img src="https://img.icons8.com/external-wanicon-lineal-wanicon/64/000000/external-printer-stationery-and-office-wanicon-lineal-wanicon.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
-                              Printers
-                            </li>
-                            <li className={styles.hardwareSolutionsListItem}>
-                            <img src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/000000/external-mobile-phone-devices-icongeek26-outline-icongeek26.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
-                              Mobile Devices
-                            </li>
+                            <Link href='/printers/Printers'>
+                              <li className={styles.hardwareSolutionsListItem}>
+                              <img src="https://img.icons8.com/external-wanicon-lineal-wanicon/64/000000/external-printer-stationery-and-office-wanicon-lineal-wanicon.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
+                              Printer Repair & Maintenance
+                              </li>
+                            </Link>
+                            <Link href='/mobileDevices/MobileDevices'>
+                              <li className={styles.hardwareSolutionsListItem}>
+                              <img src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/000000/external-mobile-phone-devices-icongeek26-outline-icongeek26.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
+                              Mobile Device Repair
+                              </li>
+                            </Link>
                             <Link href='/networkingEquipment/NetworkingEquipment'>
                               <li className={styles.hardwareSolutionsListItem}>
                               <img src="https://img.icons8.com/ios/50/000000/outlet-switch.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
-                                Networking Equipments
+                              Networking Equipment Maintenance
                               </li>
                             </Link>
                           </ul>

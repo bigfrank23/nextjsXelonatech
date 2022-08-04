@@ -55,7 +55,7 @@ export default function FAQ() {
         <hr className='m-auto mt-2 mb-4' style={{background: 'red', width: "50px", height: "2px"}} />
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>WHAT DOMAIN NAME SHOULD I CHOOSE?</Typography>
+          <Typography fontWeight={600} color='#34548c'>WHAT DOMAIN NAME SHOULD I CHOOSE?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -65,7 +65,7 @@ export default function FAQ() {
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>HOW MUCH WILL A WEBSITE COST ME?</Typography>
+          <Typography fontWeight={600} color='#34548c'>HOW MUCH WILL A WEBSITE COST ME?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -75,7 +75,7 @@ export default function FAQ() {
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>HOW LONG WILL IT TAKE FOR MY WEBSITE TO BE DEVELOPED?</Typography>
+          <Typography fontWeight={600} color='#34548c'>HOW LONG WILL IT TAKE FOR MY WEBSITE TO BE DEVELOPED?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -85,7 +85,7 @@ export default function FAQ() {
       </Accordion>
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography>WHAT KIND OF BUSINESSES DO YOU WORK WITH?</Typography>
+          <Typography fontWeight={600} color='#34548c'>WHAT KIND OF BUSINESSES DO YOU WORK WITH?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -96,7 +96,7 @@ export default function FAQ() {
       </Accordion>
       <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
         <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-          <Typography>WILL WE NEED TO HAVE A MEETING TO DISCUSS ABOUT THE WEBSITE ?</Typography>
+          <Typography fontWeight={600} color='#34548c'>WILL WE NEED TO HAVE A MEETING TO DISCUSS ABOUT THE WEBSITE ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -106,7 +106,7 @@ export default function FAQ() {
       </Accordion>
       <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
         <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
-          <Typography>WHO WRITES THE CONTENT FOR THE SITE?</Typography>
+          <Typography fontWeight={600} color='#34548c'>WHO WRITES THE CONTENT FOR THE SITE?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -116,7 +116,7 @@ export default function FAQ() {
       </Accordion>
       <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
         <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
-          <Typography>ONCE MY WEBSITE IS COMPLETED, WHAT AFTER-SALES SERVICE DO YOU OFFER?</Typography>
+          <Typography fontWeight={600} color='#34548c'>ONCE MY WEBSITE IS COMPLETED, WHAT AFTER-SALES SERVICE DO YOU OFFER?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
