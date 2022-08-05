@@ -218,10 +218,12 @@ const Navbar = () => {
                               Network Admin/Implementation
                             </li>
                           </Link>
+                          <Link href='/ServerAdmin'>
                             <li className={styles.networkAdministrationListItem}>
                             <img src="/logoAndIcons/data.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
                               Server Administration
                             </li>
+                          </Link>
                             <li className={styles.networkAdministrationListItem}>
                             <img src="/logoAndIcons/system.png" alt="productIcon" style={{width: "80px", height: "80px", objectFit: "contain", alignSelf: "center"}} />
                               {/* Infrastructure / System Integration */}

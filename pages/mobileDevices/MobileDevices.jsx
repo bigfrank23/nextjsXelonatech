@@ -50,7 +50,11 @@ const whoWeAreHeader = {
     alignItems: 'center', 
     justifyContent: 'center', 
     gap: '3rem',
-    background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("/images/web-design.jpg") center -100px / cover transparent',
+    background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("/images/mobileHeader2.png")',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    /* background-size: 100% 100%; */
+    backgroundPosition: '30% 100%'
   }
   const fancyBox = {
     color: "rgba(0, 0, 0, 0.87)",
@@ -84,8 +88,8 @@ const MobileDevices = () => {
   return (
     <>
     <Box sx={whoWeAreHeader}>
-    <Box sx={{textAlign: 'center'}}>
-        <Typography variant='h4' color='#fff' mb='2rem'>Mobile Devices</Typography>
+    <Box sx={{textAlign: 'justify'}}>
+        <Typography variant='h4' color='#fff' mb='2rem'>Mobile Device Repair</Typography>
         <Typography variant='h5' color='#fff' mb='1rem'>Excellence, Professionalism, Integrity & Convinient Service</Typography>
         <Typography variant='body1' color="#fff">Leading provider of innovative information technologies <br /> that improve the quality of lives</Typography>
     </Box>
@@ -125,58 +129,60 @@ const MobileDevices = () => {
     </Box>
     <Box sx={{background: '#fff', position: 'absolute', top: '50%', width: '100%', padding: '6rem'}} />
     <Box sx={{background: '#fff', position: 'relative', width: '100%', padding: '5rem'}}>
-        <Typography variant='h4' color='#34548c'>Most Common Phone Repair Issues</Typography>
-        <Typography variant='h6' color='#34548c'>Listed below</Typography>
-        <hr className='my-2' style={{background: 'red', width: "50px", height: "2px"}} />
-        <Box sx={{display: 'flex', mt: 4}}>
-          <Box component='ul' sx={{m: 0, p: 0, listStyle: 'none', color: '#5a5a5a', fontWeight: 400, flex: 1, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem'}}>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p' fontSize= '18px'> Broken Phone Screen</Typography>
-            </Box>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p' fontSize= '18px'>Charging Port Issue</Typography>
-            </Box>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p' fontSize= '18px'>Water Damage</Typography>
-            </Box>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p' fontSize= '18px'>Battery Draining Fast</Typography>
-            </Box>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p' fontSize= '18px'>Speaker Not Working</Typography>
-            </Box>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p' fontSize= '18px'>Frequent Hanging</Typography>
-            </Box>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p'>Phone Overheating</Typography>
-            </Box>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p' fontSize= '18px'>Internet Connection Issues</Typography>
-            </Box>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p' fontSize= '18px'>Buttons Not Working</Typography>
-            </Box>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p' fontSize= '18px'>App Crashes</Typography>
-            </Box>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p' fontSize= '18px'>Camera Not Working</Typography>
-            </Box>
-            <Box component='li' sx={{display: 'flex', gap: '5px'}}>
-              <PhoneIphoneIcon/>
-              <Typography variant='body2' component='p' fontSize= '18px'>Flashlight Not Working</Typography>
+        <Box sx={{display: 'flex'}}>
+          <Box>
+            <Typography variant='h4' color='#34548c'>Most Common Phone Repair Issues</Typography>
+            <Typography variant='h6' color='#34548c'>Listed below</Typography>
+            <hr className='my-2 mb-4' style={{background: 'red', width: "50px", height: "2px"}} />
+            <Box component='ul' sx={{m: 0, p: 0, listStyle: 'none', color: '#5a5a5a', fontWeight: 400, flex: 1, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '2rem'}}>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p' fontSize= '18px'> Broken Phone Screen</Typography>
+              </Box>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p' fontSize= '18px'>Charging Port Issue</Typography>
+              </Box>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p' fontSize= '18px'>Water Damage</Typography>
+              </Box>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p' fontSize= '18px'>Battery Draining Fast</Typography>
+              </Box>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p' fontSize= '18px'>Speaker Not Working</Typography>
+              </Box>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p' fontSize= '18px'>Frequent Hanging</Typography>
+              </Box>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p'>Phone Overheating</Typography>
+              </Box>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p' fontSize= '18px'>Internet Connection Issues</Typography>
+              </Box>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p' fontSize= '18px'>Buttons Not Working</Typography>
+              </Box>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p' fontSize= '18px'>App Crashes</Typography>
+              </Box>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p' fontSize= '18px'>Camera Not Working</Typography>
+              </Box>
+              <Box component='li' sx={{display: 'flex', gap: '5px'}}>
+                <PhoneIphoneIcon/>
+                <Typography variant='body2' component='p' fontSize= '18px'>Flashlight Not Working</Typography>
+              </Box>
             </Box>
           </Box>
           <Box sx={{flex: 1, display: 'flex', justifyContent: 'center'}}>
@@ -185,8 +191,24 @@ const MobileDevices = () => {
         </Box>
     </Box>
     <Box>
-          <img src="/images/phoneRepairBanner.png" alt="" style={{height: '450px'}} />
+      <img src="/images/phoneRepairBanner.png" alt="" style={{height: '450px'}} />
+    </Box>
+    <Box sx={{background: '#34548c', padding: '2rem 10rem 2rem 10rem', display: 'flex', gap: '2rem'}}>
+        <Box>
+          <Typography variant='h6' fontStyle='italic' color='#fff'>
+          As technology advances, devices utilizing these technologies become smaller and smaller. 
+          Today's cell phones have more computing power than past computers that took up an entire room of space. 
+          Modern mobile devices allow users to hold the world, or at least all of its information, 
+          maps, and games in their hands.
+          </Typography>
         </Box>
+        <Box>
+          <img src="/images/mobileHeader.jpg" alt="" />
+        </Box>
+    </Box>
+    <Box>
+      <img src="/images/banner2.png" alt="" style={{width: '100%', height: '300px'}} />
+    </Box>
     </>
   )
 }

@@ -35,18 +35,19 @@ const datas = [
   {
       id: uuidv4(),
       h1: 'Get Professional Printer Repair',
-      p: 'Many people like to tackle copier and printer repair on their own. After all, if you can do it yourself, you cut down your wait time and get back up to speed faster. However, some types of repairs are too complex for people who do not have special knowledge of these devices. If your printer is consistently getting jammed, has parts that need to be replaced, or is making any worrisome sounds or smells, it is time to get professional help.'
+      p1: 'Many people like to tackle copier and printer repair on their own. After all, if you can do it yourself, you cut down your wait time and get back up to speed faster. However, some types of repairs are too complex for people who do not have special knowledge of these devices. If your printer is consistently getting jammed, has parts that need to be replaced, or is making any worrisome sounds or smells, it is time to get professional help.',
+      p2: 'Elonatech can readily help you solve your printer repair problems quickly and affordably.'
   },
-  {
-      id: uuidv4(),
-      h1: 'Get Professional Printer Repair',
-      p: 'Elonatech can readily help you solve your printer repair problems quickly and affordably. Our Printer Repair Technicians is highly skilled and proficient in the regular and routine repairs, including replacements, installation and configuration of new printers, maintaining and ensuring the proper functioning of standalone printers, scanners or Network Printers.'
-  },
-  {
-      id: uuidv4(),
-      h1: 'Repair and Maintenance Services for out of Warranty Print Products',
-      p: 'Highly aware of your company’s business needs, Elonatech provides a portfolio of services that can be ordered as the occasion demands. Your printer, photocopier or scanner is down, and you are out of warranty, or your device is not even covered by a warranty. You can opt for our repair option which includes the repair service and part replacement that can be managed throughout the usage of the device.'
-  }
+  // {
+  //     id: uuidv4(),
+  //     h1: 'Get Professional Printer Repair',
+  //     p: 'Elonatech can readily help you solve your printer repair problems quickly and affordably. Our Printer Repair Technicians is highly skilled and proficient in the regular and routine repairs, including replacements, installation and configuration of new printers, maintaining and ensuring the proper functioning of standalone printers, scanners or Network Printers.'
+  // },
+  // {
+  //     id: uuidv4(),
+  //     h1: 'Repair and Maintenance Services for out of Warranty Print Products',
+  //     p: 'Highly aware of your company’s business needs, Elonatech provides a portfolio of services that can be ordered as the occasion demands. Your printer, photocopier or scanner is down, and you are out of warranty, or your device is not even covered by a warranty. You can opt for our repair option which includes the repair service and part replacement that can be managed throughout the usage of the device.'
+  // }
 ]
 const Printers = () => {
   return (
@@ -66,17 +67,17 @@ const Printers = () => {
         <Box sx={{p: 6, textAlign: 'center', background: 'white', boxShadow: '1px 1px 3px 4px darkgrey', borderRadius: '5px', transition: 'border .25s ease', '&:hover': {border: '2px solid orange'}}}>
         <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/64/000000/external-printer-printing-tulpahn-outline-color-tulpahn.png"/>
           <Typography variant='h6' fontWeight={700}>Lorem, ipsum dolor.</Typography>
-          <Typography variant='body2' component='span'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium molestiae quasi facere officia nulla sint totam quidem, corrupti deleniti?</Typography>
+          <Typography variant='body2' component='span'>Highly aware of your company’s business needs, Elonatech provides a portfolio of services that can be ordered as the occasion demands. Your printer, photocopier or scanner is down, and you are out of warranty, or your device is not even covered by a warranty. You can opt for our repair option which includes the repair service and part replacement that can be managed throughout the usage of the device.</Typography>
         </Box>
         <Box sx={{p: 6, textAlign: 'center', background: 'white', boxShadow: '1px 1px 3px 4px darkgrey', borderRadius: '5px', transition: 'border .25s ease', '&:hover': {border: '2px solid orange'}}}>
         <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/64/000000/external-printer-printing-tulpahn-outline-color-tulpahn-1.png"/>
           <Typography variant='h6' fontWeight={700}>Lorem, ipsum dolor.</Typography>
-          <Typography variant='body2' component='span'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium molestiae quasi facere officia nulla sint totam quidem, corrupti deleniti?</Typography>
+          <Typography variant='body2' component='span'>Our Printer Repair Technicians is highly skilled and proficient in the regular and routine repairs, including replacements, installation and configuration of new printers, maintaining and ensuring the proper functioning of standalone printers, scanners or Network Printers.</Typography>
         </Box>
         <Box sx={{p: 6, textAlign: 'center', background: 'white', boxShadow: '1px 1px 3px 4px darkgrey', borderRadius: '5px', transition: 'border .25s ease', '&:hover': {border: '2px solid orange'}}}>
         <img src="https://img.icons8.com/external-photo3ideastudio-lineal-color-photo3ideastudio/64/000000/external-printer-home-office-photo3ideastudio-lineal-color-photo3ideastudio.png"/>
           <Typography variant='h6' fontWeight={700}>Lorem, ipsum dolor.</Typography>
-          <Typography variant='body2' component='span'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium molestiae quasi facere officia nulla sint totam quidem, corrupti deleniti?</Typography>
+          <Typography variant='body2' component='span'>Highly aware of your company’s business needs, Elonatech provides a portfolio of services that can be ordered as the occasion demands. Your printer, photocopier or scanner is down, and you are out of warranty, or your device is not even covered by a warranty. You can opt for our repair option which includes the repair service and part replacement that can be managed throughout the usage of the device.</Typography>
         </Box>
       </Box>
     </Box>
@@ -107,7 +108,7 @@ const Printers = () => {
       </Box>
       <Box sx={{flex: 1, border: '10px solid #34548c', padding: '2rem', width: '500px', boxShadow: '5px 5px 3px red'}}>
         <Box>
-        <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} swipeable={true} stopOnHover={true}>
+        {/* <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} swipeable={true} stopOnHover={true}> */}
             {datas.map((data)=> (
                 <Box key={data.id}>
                     {/* <img src="/logoAndIcons/blackLogo.png" alt="black-logo" style={{width: '30px', height: '30px'}} /> */}
@@ -118,12 +119,13 @@ const Printers = () => {
                     <StarIcon />
                     <StarIcon />
                     </Box>
-                    <Typography variant='h6' fontWeight={600} mb={2}>{data.h1}</Typography>
+                    <Typography variant='h6' textAlign='center' fontWeight={600} mb={2}>{data.h1}</Typography>
                     <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
-                    <Typography variant='subtitle1'>{data.p}</Typography>
+                    <Typography variant='subtitle1'>{data.p1}</Typography>
+                    <Typography variant='subtitle1'>{data.p2}</Typography>
                 </Box>
             ))}
-            </Carousel>
+          {/* </Carousel> */}
         </Box>
       </Box>
     </Box>
@@ -144,9 +146,10 @@ const Printers = () => {
           <Box component='li' sx={{display: 'flex', gap: '1rem', color: '#fff'}}><LocalPrintshopOutlinedIcon sx={{color: '#9d0000', alignSelf: 'center'}} /><Typography variant='h6'>Xerox</Typography> </Box>
         </Box>
       </Box>
-      <Box sx={{flex: 1.5, display: 'flex', justifyContent: 'center', gap: '1rem', background: '#fff'}}>
-        <img src="/images/printer6.png" alt="" width={300} style={{objectFit: 'contain'}} />
-        <img src="/images/printer4.png" alt="" width={300} />
+      <Box sx={{flex: 1.5, display: 'flex', justifyContent: 'center', gap: '1rem', background: 'transparent', border: '5px solid #feffff'}}>
+        <img src="/images/printersCombined.png" alt="" style={{width: '100%', objectFit: 'contain'}} />
+        {/* <img src="/images/printer6.png" alt="" width={300} style={{objectFit: 'contain'}} />
+        <img src="/images/printer4.png" alt="" width={300} /> */}
       </Box>
     </Box>
     </>

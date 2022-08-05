@@ -274,37 +274,37 @@ const whoWeAreHeader = {
                 <img src="/images/Programming.jpg" alt="" style={{width: '100%', height: '100%', border: '2px solid grey', borderRadius: '15px'}} />
             </Box>
             <Box sx={{flex: 1, display: 'flex', gap: '2rem'}}>
-            <Box sx={{borderLeft: '2px dotted #ccc', height: '600px', position: 'absolute', marginLeft: '2rem'}} />
+            <Box sx={{borderLeft: '2px dotted #ccc', height: '500px', position: 'absolute', marginLeft: '2rem'}} />
             <Box sx={{m: 0, p: 0, listStyle: 'none', position: 'relative', zIndex: 1}} component='ul'>
                 <Box component='li' sx={{display: 'flex', gap: '2rem'}}>
                     <Box component='div' sx={{background: '#EE3239', color: '#fffafa', minWidth: '65px', height: '65px', borderRadius: '1rem', border: '2px solid#dee2e6', fontSize: '24px', display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'all .3s ease-in-out', '&:hover': {border: '2px solid #175cff'}}}> <i className="fa fa-check" aria-hidden="true"></i> </Box>
                     <Box component='div'>
-                        <Typography variant='h6' fontWeight='500' marginBottom='6px' color='#175cff'>Step 1</Typography>
-                        <Typography variant='h6' fontWeight='600' fontSize='20px' marginBottom='10px'>Project Enquiry</Typography>
+                        <Typography variant='h6' fontWeight='500' color='#175cff'>Step 1</Typography>
+                        <Typography variant='h6' fontWeight='600' fontSize='15px'>Project Enquiry</Typography>
                         <Typography component='p' variant='body1'>The first point of contact is all about inquiries and technical specifications, At this stage we get to know what your project is all about and how we can help you achieve your objectives.</Typography>
                     </Box>
                 </Box>
-                <Box component='li' sx={{display: 'flex', gap: '2rem', marginTop: '2rem'}}>
+                <Box component='li' sx={{display: 'flex', gap: '2rem', marginTop: '1rem'}}>
                     <Box component='div' sx={{background: '#EE3239', color: '#fffafa', minWidth: '65px', height: '65px', borderRadius: '1rem', border: '2px solid#dee2e6', fontSize: '24px', display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'all .3s ease-in-out', '&:hover': {border: '2px solid #175cff'}}}> <i className="fa fa-check" aria-hidden="true"></i> </Box>
                     <Box component='div'>
-                        <Typography variant='h6' fontWeight='500' marginBottom='6px' color='#175cff'>Step 2</Typography>
-                        <Typography variant='h6' fontWeight='600' fontSize='20px' marginBottom='10px'>Prototyping (Designing the UI and UX)</Typography>
+                        <Typography variant='h6' fontWeight='500' color='#175cff'>Step 2</Typography>
+                        <Typography variant='h6' fontWeight='600' fontSize='15px'>Prototyping (Designing the UI and UX)</Typography>
                         <Typography component='p' variant='body1'>After all enquiries, the next step is to build a prototype by designing the User Interface (UI) and make the website have an excellent User Experience (UX), so the client can have a feel of exactly how the website will look.</Typography>
                     </Box>
                 </Box>
-                <Box component='li' sx={{display: 'flex', gap: '2rem', marginTop: '2rem'}}>
+                <Box component='li' sx={{display: 'flex', gap: '2rem', marginTop: '1rem'}}>
                     <Box component='div' sx={{background: '#EE3239', color: '#fffafa', minWidth: '65px', height: '65px', borderRadius: '1rem', border: '2px solid#dee2e6', fontSize: '24px', display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'all .3s ease-in-out', '&:hover': {border: '2px solid #175cff'}}}> <i className="fa fa-check" aria-hidden="true"></i> </Box>
                     <Box component='div'>
-                        <Typography variant='h6' fontWeight='500' marginBottom='6px' color='#175cff'>Step 3</Typography>
-                        <Typography variant='h6' fontWeight='600' fontSize='20px' marginBottom='10px'>Project Execution (The Development Phase)</Typography>
+                        <Typography variant='h6' fontWeight='500' color='#175cff'>Step 3</Typography>
+                        <Typography variant='h6' fontWeight='600' fontSize='15px'>Project Execution (The Development Phase)</Typography>
                         <Typography component='p' variant='body1'>Execution will commence immediately. In this stage , we will determine what programming language will best suite the website, then commence the coding  to bring about the aesthetics of the website.</Typography>
                     </Box>
                 </Box>
-                <Box component='li' sx={{display: 'flex', gap: '2rem', marginTop: '2rem'}}>
+                <Box component='li' sx={{display: 'flex', gap: '2rem', marginTop: '1rem'}}>
                     <Box component='div' sx={{background: '#EE3239', color: '#fffafa', minWidth: '65px', height: '65px', borderRadius: '1rem', border: '2px solid#dee2e6', fontSize: '24px', display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'all .3s ease-in-out', '&:hover': {border: '2px solid #175cff'}}}> <i className="fa fa-check" aria-hidden="true"></i> </Box>
                     <Box component='div'>
-                        <Typography variant='h6' fontWeight='500' marginBottom='6px' color='#175cff'>Step 4</Typography>
-                        <Typography variant='h6' fontWeight='600' fontSize='20px' marginBottom='10px'>The Functionality Stage (Backend)</Typography>
+                        <Typography variant='h6' fontWeight='500' color='#175cff'>Step 4</Typography>
+                        <Typography variant='h6' fontWeight='600' fontSize='15px'>The Functionality Stage (Backend)</Typography>
                         <Typography component='p' variant='body1'>The server-side development commences. which focuses on databases, scripting, and website architecture. It consists of behind-the-scene activities that occur when performing any action on the website (account login, online store etc.).</Typography>
                     </Box>
                 </Box>
@@ -381,7 +381,7 @@ const whoWeAreHeader = {
                 </Box>
             </Box>
             <Button variant='contained' color='primary' sx={{display: 'flex', margin: 'auto', marginTop: '2rem'}}>Contact Us Now</Button> */}
-            <img src="/images/banner2.png" alt="" style={{width: '100%'}} />
+            <img src="/images/banner2.png" alt="" style={{width: '100%', height: '300px'}} />
         
     </Box>
     <Box sx={{background: '#ddd', padding: '2rem 10rem 5rem 10rem', display: 'flex', gap: '2rem'}}>

@@ -170,15 +170,15 @@ const data = [
 const projects = [
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/IMG_2201.jpg',
+    img: '/images/networkAdministration/networkingProject1/IMG_2201.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/IMG_2213.jpg',
+    img: '/images/networkAdministration/networkingProject1/IMG_2213.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/IMG_2218.jpg',
+    img: '/images/networkAdministration/networkingProject1/IMG_2218.JPG',
   },
   {
     id: uuidv4(),
@@ -186,7 +186,7 @@ const projects = [
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/IMG_2228.jpg',
+    img: '/images/networkAdministration/networkingProject1/IMG_2228.JPG',
   },
   {
     id: uuidv4(),
@@ -212,47 +212,47 @@ const projects = [
 const projects2 = [
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1933.jpg',
+    img: '/images/networkAdministration/networkingProject2/IMG_1933.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1938.jpg',
+    img: '/images/networkAdministration/networkingProject2/IMG_1938.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1940.jpg',
+    img: '/images/networkAdministration/networkingProject2/IMG_1940.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1941.jpg',
+    img: '/images/networkAdministration/networkingProject2/IMG_1941.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1943.jpg',
+    img: '/images/networkAdministration/networkingProject2/IMG_1943.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1944.jpg',
+    img: '/images/networkAdministration/networkingProject2/IMG_1944.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1950.jpg',
+    img: '/images/networkAdministration/networkingProject2/IMG_1950.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1952.jpg',
+    img: '/images/networkAdministration/networkingProject2/IMG_1952.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1959.jpg',
+    img: '/images/networkAdministration/networkingProject2/IMG_1959.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1962.jpg',
+    img: '/images/networkAdministration/networkingProject2/IMG_1962.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1966.jpg',
+    img: '/images/networkAdministration/networkingProject2/IMG_1966.JPG',
   },
 ]
 
@@ -317,7 +317,7 @@ const NetworkAdmin = () => {
         </Box>
         <Box mb={5}>
           <Box sx={{display: "flex", gap: '2rem', justifyContent: 'center', background: '#34548c', padding: '2rem'}}>
-            <Box sx={{width: '500px'}}>
+            <Box>
               <img src="/images/q4.jpg" alt="" style={{width: "100%", height: "100%", borderRadius: '10px'}} />
             </Box>
             <Box sx={{width: '600px', background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/q1.webP")', padding: '2rem', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', borderRadius: '10px', display: 'grid', placeItems: 'center'}}>
@@ -355,7 +355,7 @@ const NetworkAdmin = () => {
               >
                   {projects.map((project)=> (
                     <SplideSlide key={project.id}>
-                        <img src={project.img} style={{width: '450px', height: '350px'}} alt="Image 1" />
+                        <img src={project.img} style={{width: '400px', height: '350px'}} alt="Image 1" />
                     </SplideSlide>
                   ))}
             </Splide>

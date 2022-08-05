@@ -94,12 +94,15 @@ const Computers = () => {
             {/* <Typography variant="subtitle1">Lorem, ipsum.</Typography> */}
         </Box>
     </Box>
-    <Box sx={{display: 'flex', justifyContent: 'center', alignItem: 'center', background: '#34548c', p: 3, mt: 3}}>
+    {/* <Box sx={{display: 'flex', justifyContent: 'center', alignItem: 'center', background: '#34548c', p: 3, mt: 3}}>
         <Box sx={{background: 'linear-gradient(30deg,rgba(255, 255, 255, .5),rgba(255, 255, 255, .5)),url("https://images.unsplash.com/photo-1515595967223-f9fa59af5a3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")', backgroundPosition: 'center', backgroundSize: 'cover', padding: '2rem 3rem', display: 'flex', flexDirection: 'column', borderRadius: '5px'}}>
             <img src="/logoAndIcons/blackLogo.png" width={30} alt="black-logo" style={{alignSelf: 'center'}} />
             <Typography variant="h6" component='span' fontWeight={600} my={2} color='#34548c'>Seeking For More Information?</Typography>
             <Button variant="contained" color="error" endIcon={<ContactPhoneOutlinedIcon/>}>Contact us now</Button>
         </Box>
+    </Box> */}
+    <Box>
+        <img src="/images/banner2.png" style={{height: '300px', width: '100%'}} alt="" />
     </Box>
     </>
   )

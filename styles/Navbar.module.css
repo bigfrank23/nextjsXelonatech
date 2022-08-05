@@ -376,7 +376,7 @@
     font-size: 12px !important;
   }
   
-  .hardwareSolutionsListActive, .networkAdministrationListActive, .systemSecurityListActive, 
+  .hardwareSolutionsListActive, .systemSecurityListActive, 
   .telecomsListActive, .softwareSolutionsListActive{
     list-style: none;
     padding: 0;
@@ -384,7 +384,19 @@
     display: flex;
     gap: 4rem;
     position: absolute;
-    left: 30%;
+    left: 27%;
+    margin-top: 3rem;
+    font-size: 9px;
+    text-align: center;
+  }
+  .networkAdministrationListActive{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 4rem;
+    position: absolute;
+    left: 24%;
     margin-top: 3rem;
     font-size: 9px;
     text-align: center;
