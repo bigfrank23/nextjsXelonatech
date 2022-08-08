@@ -1,0 +1,39 @@
+.webInnerCardImg{
+    /* background: url('/images/pc.jpg'); */
+    background-position: center !important;
+    background-size: cover !important;
+    width: 90%;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+.halfOverlay{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(52, 84, 140, 0.9), rgba(52, 84, 140, 0.9));
+    color: #fff;
+    padding: 1rem;
+    width: 0px;
+    height: 0%;
+    transition: height .25s linear;
+}
+.fullOverlay{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(221, 221, 221, .9), rgba(221, 221, 221, .9));
+    color: #34548c;
+    font-weight: 900 !important;
+    padding: 2rem;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    transition: height .25s linear;
+}
+.webInnerCardImg:hover .fullOverlay{
+    padding: 2rem;
+    height: 150px;
+    width: 100%;
+    font-weight: 900 !important;
+    color: red;
+}

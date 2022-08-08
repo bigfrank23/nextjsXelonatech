@@ -1,22 +1,22 @@
-import { Box, Button, Card, CardActions, CardContent, CardMedia, Grid, Link, Typography } from '@mui/material'
+import { Box, Button, Grid, Link, Typography } from '@mui/material'
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { v4 as uuidv4 } from "uuid";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
 import FAQ from '../components/faq/FAQ';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import styles from '../styles/WebDesignAndDevelopment.module.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
+import { useState } from 'react';
 
 // import "./styles.css";
 
-// import required modules
-import { EffectCards } from "swiper";
 
 
 const whoWeAreHeader = {
@@ -57,25 +57,13 @@ const whoWeAreHeader = {
     }
   }
 
-  const fancyBox2 = {
-    color: "rgba(0, 0, 0, 0.87)",
-    transition: "box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
-    position: "relative",
-    minWidth: "0px",
-    overflowWrap: "break-word",
-    backgroundClip: "border-box",
-    border: "0px solid rgba(0, 0, 0, 0.125)",
-    marginLeft: "24px",
-    marginRight: "24px",
-    borderRadius: "0.75rem",
-    overflow: "visible",
-    padding: "1rem 3rem",
-    backgroundColor: "rgba(255, 255, 255, 0.8)",
-    backdropFilter: "saturate(200%) blur(30px)",
-    boxShadow: "rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem",
-}
-
   const WebDesignAndDevelopment = () => {
+    const [isMouseOver, setIsMouseOver] = useState(false)
+
+    const handleMouseOver = () => {
+        setIsMouseOver(true)
+    }
+
     const items = [
         {
             id: uuidv4(),
@@ -137,43 +125,51 @@ const whoWeAreHeader = {
         {
             id: uuidv4(),
             img: '/images/webProjects/ElonatechNigeria.png',
-            web: '"https://elonatech.com.ng"'
+            web: '"https://elonatech.com.ng"',
+            name: 'Elonatech Nigeria Limited'
         },
         
         {
             id: uuidv4(),
             img: '/images/webProjects/HyperthreadVentures.png',
-            web: '"https://hyperthread.com.ng"'
+            web: '"https://hyperthread.com.ng"',
+            name: 'Hyperthread Ventures'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/KappachemLaboratory.png',
-            web: '"https://kappachemlabs.com"'
+            web: '"https://kappachemlabs.com"',
+            name: 'Kappachem Laboratory'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/PFNLagosState.png',
-            web: '"https://pfnlagosstate.org"'
+            web: '"https://pfnlagosstate.org"',
+            name: 'pentecostal Fellowship of Nigeria, Lagos State'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/RemabenScientific.png',
-            web: '"https://https://remabenscientific.com/"'
+            web: '"https://https://remabenscientific.com/"',
+            name: 'Remaben Scientific'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/SafebrooksNigeria.png',
-            web: '"https://https://www.safebrooks.com.ng/"'
+            web: '"https://https://www.safebrooks.com.ng/"',
+            name: 'Safebrooks'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/SupremeFamily.png',
-            web: '"https://supremefamily.org"'
+            web: '"https://supremefamily.org"',
+            name: 'Supreme Family'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/TheHomeBuildersMinistries.png',
-            web: '"https://thbcmi.org"'
+            web: '"https://thbcmi.org"',
+            name: 'The home builders Ministry'
         },
 
     ]
@@ -352,7 +348,14 @@ const whoWeAreHeader = {
             {projects.map((project)=> (
             <SplideSlide key={project.id}>
                 <Link href={project.web}>
-                    <img src={project.img} style={{width: '90%', height: '400px'}} alt="Image 1" />
+                    <Box component='div' className={styles.webInnerCardImg} style={{background: `url(${project.img})`}}>
+                        <Box className={styles.fullOverlay}>
+                            <Typography variant='subtitle1' fontWeight={600} textTransform='uppercase'>{project.name}</Typography>
+                            {/* <Link href={project.web}> */}
+                                <OpenInNewIcon />
+                            {/* </Link> */}
+                        </Box>
+                    </Box>
                 </Link>
             </SplideSlide>
             ))}

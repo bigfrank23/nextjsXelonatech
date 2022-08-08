@@ -197,7 +197,7 @@ const MobileDevices = () => {
         <Box>
           <Typography variant='h6' fontStyle='italic' color='#fff'>
           As technology advances, devices utilizing these technologies become smaller and smaller. 
-          Today's cell phones have more computing power than past computers that took up an entire room of space. 
+          Today&apos;s cell phones have more computing power than past computers that took up an entire room of space. 
           Modern mobile devices allow users to hold the world, or at least all of its information, 
           maps, and games in their hands.
           </Typography>

@@ -305,7 +305,7 @@ const NetworkAdmin = () => {
               <Box sx={{flex: '1'}}>
                 <Box sx={stackBox}>
                     <Box sx={stackCard1}>
-                      <img style={{width: '100%', height: '100%'}} src="/images/computer-network.webP" alt="" />
+                      <img style={{width: '100%', height: '100%'}} src="/images/computer-network.webp" alt="" />
                     </Box>
                     <Box sx={stackCard2}>
                       <img style={{width: '100%', height: '100%'}} src="/images/q3.jpg" alt="" />

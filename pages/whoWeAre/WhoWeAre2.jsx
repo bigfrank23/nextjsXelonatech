@@ -39,7 +39,7 @@ const WhoWeAre2 = () => {
       {/* <meta name="viewport" content="width=device-width,initial-scale=1"/> */}
         <title>Who We Are</title>
         <meta name="description" content="About Elonatech Nigeria Limited Website" />
-        {/* <link rel="icon" href="/elona-icon.png" /> */}
+        <link rel="icon" href="/elona-icon.png" />
     </Head>
     <Box sx={whoWeAreHeader}>
         <Box sx={{textAlign: 'center'}}>
@@ -52,16 +52,17 @@ const WhoWeAre2 = () => {
       <Typography variant='h4' textAlign='center' color='#34548c' textTransform='capitalize'>INTRODUCTION</Typography>
       <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
       </Box>
-    <Box sx={{display: 'flex', padding: '5rem 10rem', background: '#fff'}}>
+    <Box sx={{display: 'flex', padding: '5rem 10rem', background: '#EFEFEF'}}>
         <Box sx={{flex: 1}}>
-            <img src="https://www.tranter-it.com/wp-content/uploads/2021/12/devices2.png" alt="" />
+            <img src="/images/iot3.jpg" alt="" width={500} />
+            {/* <img src="https://www.tranter-it.com/wp-content/uploads/2021/12/devices2.png" alt="" /> */}
             {/* <img src="https://tms.co.il/image/catalog/products/5MS29AA-desc/BZVMLnx5Iu.jpeg" alt="" /> */}
         </Box>
         <Box sx={{flex: 1}}>
             <Typography variant='subtitle1' fontWeight={700} color="#34548c">
                 ABOUT US
             </Typography>
-            <Typography variant='h4' fontWeight={900}>
+            <Typography variant='h4' textTransform='capitalize' fontWeight={900}>
                 Innovative ideas, technology and services
             </Typography>
             <Box></Box>

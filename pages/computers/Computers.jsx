@@ -65,7 +65,7 @@ const Computers = () => {
             <Typography variant="h3" fontWeight={600} my={3}>Desktop and Laptop PCs</Typography>
             <Typography component='p' variant="h6" mb={2}>
             We offer all kinds of laptop, desktop and server repairs of all makes and models, including Windows, Mac and Linux computers.
-            We do virus removal without reformatting so you don't lose your important files or photos. We repair both hardware and software. We have no queue so come any time and we'll start fixing your computer right away.
+            We do virus removal without reformatting so you don&apos;t lose your important files or photos. We repair both hardware and software. We have no queue so come any time and we&apos;ll start fixing your computer right away.
             </Typography>
             {/* <Typography variant="subtitle1">Lorem, ipsum.</Typography> */}
         </Box>

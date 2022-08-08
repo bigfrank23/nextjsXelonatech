@@ -58,36 +58,36 @@ const NetworkingEquipment = () => {
             <Typography variant='h6' textAlign='center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, unde.</Typography>
         <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
         </Box>
-        <Box component='div'>
-        <Grid container spacing={2}>
-          {items.map((v, i)=> (
-            <Grid item xs={12} sm={6} md={3} key={i}>
-            <Card sx={{ maxWidth: 345 }}>
-            <CardMedia
-                component="img"
-                height="140"
-                image="https://images.unsplash.com/photo-1605978542268-b49288706bfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="green iguana"
-            />
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                Networking Equipment
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Laboriosam eveniet velit accusamus at aliquam fugit similique 
-                vero ea iure nesciunt repellendus deleniti a laborum suscipit, 
-                ducimus alias minus dolorum provident!
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
-            </CardActions>
-            </Card>
-        </Grid>
-          ))}
-        </Grid>
+        <Box component='section'>
+            <Grid container spacing={2}>
+            {items.map((v, i)=> (
+                <Grid item xs={12} sm={6} md={3} key={i}>
+                <Card sx={{ maxWidth: 345 }}>
+                <CardMedia
+                    component="img"
+                    height="140"
+                    image="https://images.unsplash.com/photo-1605978542268-b49288706bfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="green iguana"
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                    Networking Equipment
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laboriosam eveniet velit accusamus at aliquam fugit similique 
+                    vero ea iure nesciunt repellendus deleniti a laborum suscipit, 
+                    ducimus alias minus dolorum provident!
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button size="small">Share</Button>
+                    <Button size="small">Learn More</Button>
+                </CardActions>
+                </Card>
+            </Grid>
+            ))}
+            </Grid>
         </Box>
     </Box>
     </>

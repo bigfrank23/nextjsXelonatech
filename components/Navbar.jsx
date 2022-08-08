@@ -33,7 +33,7 @@ const Navbar = () => {
     window.addEventListener('scroll', ()=> {
         if (window.scrollY > 500) {
           setScroll(true)
-          console.log('Scroll Active');
+          // console.log('Scroll Active');
       }else{
           setScroll(false)
       }
@@ -224,14 +224,18 @@ const Navbar = () => {
                               Server Administration
                             </li>
                           </Link>
+                          <Link href='/SystemIntegration'>
                             <li className={styles.networkAdministrationListItem}>
                             <img src="/logoAndIcons/system.png" alt="productIcon" style={{width: "80px", height: "80px", objectFit: "contain", alignSelf: "center"}} />
                               {/* Infrastructure / System Integration */}
                             </li>
+                          </Link>
+                          <Link href='/StructuredCabling'>
                             <li className={styles.networkAdministrationListItem}>
                             <img src="/logoAndIcons/networkCables.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
                               Structured cabling
                             </li>
+                          </Link>
                             <li className={styles.networkAdministrationListItem}>
                             <img src="https://img.icons8.com/dotty/80/000000/wallmount-camera.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
                               CCTV Installation
