@@ -35,7 +35,7 @@ const NetworkingEquipment = () => {
             <Box width='700px' padding='2rem' alignSelf='center'>
                 {/* <Typography color='#fff' fontSize={34}>Lorem ipsum dolor sit amet.</Typography> */}
                 <Typography color='#fff' py={2} sx={{'&::first-letter': {fontSize: '38px'}}}>
-                Here at Elonatech, we understand that businesses can't afford to have their network compromised by faulty or poor equipment. 
+                Here at Elonatech, we understand that businesses can&apos;t afford to have their network compromised by faulty or poor equipment. 
                 That’s why we offer a comprehensive repair service for all brands of network hardware, 
                 including Cisco, Extreme Networks, Juniper, Ubiquity, TP-link, Linksys and many more.
                 </Typography>
@@ -56,7 +56,7 @@ const NetworkingEquipment = () => {
             <Box sx={{display: 'flex', gap: '2rem'}}>
                 <Box sx={{flex: 1}}>
                     <Typography color='#fff' variant='h6' sx={{'&::first-letter': {fontSize: '38px'}}}>
-                    we understand there are times when you need your network equipment up and running as soon as possible and can't afford to wait. 
+                    we understand there are times when you need your network equipment up and running as soon as possible and can&apos;t afford to wait. 
                     Our engineers are very knowledgeable when it comes to network equipment. They also perform rigorous testing before returning your equipment.  
                     we also offer a special express repair service where our team will prioritize your job and have your equipment back up and running fast.
                     </Typography>
@@ -78,7 +78,7 @@ const NetworkingEquipment = () => {
             {/* <Typography variant='h6' textAlign='center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, unde.</Typography> */}
         <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
         </Box>
-        <Box sx={{display: 'flex', justifyContent: 'flex-end', marginTop: '2rem', background: 'url("/images/bannerNet1.png")', minHeight: '340px', backgroundSize: 'cover'}}>
+        <Box sx={{display: 'flex', justifyContent: 'flex-start', marginTop: '2rem', background: 'url("/images/bannerNet2.png")', minHeight: '340px', backgroundSize: 'cover'}}>
             <Box width='700px' padding='2rem'>
                 {/* <Typography color='#fff' fontSize={34}>Lorem ipsum dolor sit amet.</Typography> */}
                 <Typography color='#fff' py={2} sx={{'&::first-letter': {fontSize: '38px'}}}>

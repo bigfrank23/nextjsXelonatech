@@ -65,7 +65,7 @@ const Printers = () => {
           Maintaining the printer and copier in your office is very important. Keeping up with all necessary printer repair and maintenance is the best way to protect your valuable investment. It also ensures that your business will remain productive and avoid frustrating delays due to printer malfunction.
           </Typography>
           <Typography variant='h6' mt={2} textAlign='center'>
-          We offer a full range of printer repair services. Do you have issues with your printers or copiers? Is your printer or photocopier giving you a hard time? Your printing jobs should be more straight forward and seamless. Let's FIX IT!!
+          We offer a full range of printer repair services. Do you have issues with your printers or copiers? Is your printer or photocopier giving you a hard time? Your printing jobs should be more straight forward and seamless. Let&apos;s FIX IT!!
           </Typography>
           <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
       <Box sx={{background: '#34548c', display: 'flex', justifyContent: 'center', gap: '1rem', padding: '2rem', borderRadius: '5px'}}>

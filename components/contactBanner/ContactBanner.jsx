@@ -25,7 +25,7 @@ const ContactBanner = () => {
             <Box>
                 <Typography variant="h3" fontWeight={700} color='red'>Get Ahead of your Competitors</Typography>
                 <Typography variant="subtitle2" color= '#fff' mt={2}>If you are ready to become the best in your industry and also stand out from a sea of hungry competitors,
-                then Elonatech is the partner you need. Get in touch with us below, let's take your busines to the next level.
+                then Elonatech is the partner you need. Get in touch with us below, let&apos;s take your busines to the next level.
                 </Typography>
             </Box>
             <Box sx={{display: 'flex', gap: '2rem'}}>
