@@ -20,6 +20,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
+import ContactBanner from '../../components/contactBanner/ContactBanner';
 
 // import required modules
 // import { EffectCube, Pagination } from "swiper";
@@ -182,7 +183,7 @@ const projects = [
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/IMG_2220.jpg',
+    img: '/images/networkAdministration/networkingProject1/IMG_2220.JPG',
   },
   {
     id: uuidv4(),
@@ -389,13 +390,7 @@ const NetworkAdmin = () => {
             </Splide>
             </Box>
             <Box>
-              {/* <Box sx={{width: '100%', height: '300px', background: 'url("/images/banner2.png")', backgroundRepeat: 'no-repeat'}}> */}
-                <img src='/images/banner2.png' alt='' style={{width: '100%', height: '350px'}} />
-                {/* <Box sx={{position: 'absolute', zIndex: 1, transform: 'translate(75px, -40px)'}}>
-                  <Typography variant='h5' color='#fff'>Ready to start a project ?</Typography>
-                  <Button variant='contained' color='primary'>Call Now</Button>
-                </Box> */}
-              {/* </Box> */}
+              <ContactBanner />
             </Box>
         </Box>
     </>

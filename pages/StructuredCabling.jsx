@@ -46,89 +46,118 @@ const whoWeAreHeader = {
 const projects = [
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/IMG_2201.JPG',
+    img: '/images/StructuredCabling/ProjectPhase1/IMG-20130627-00055.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/IMG_2213.JPG',
+    img: '/images/StructuredCabling/ProjectPhase1/IMG-20130627-00058.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/IMG_2218.JPG',
+    img: '/images/StructuredCabling/ProjectPhase1/IMG-20130629-00070.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/IMG_2220.jpg',
+    img: '/images/StructuredCabling/ProjectPhase1/IMG-20130910-00269.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/IMG_2228.JPG',
+    img: '/images/StructuredCabling/ProjectPhase1/IMG-20130911-00204.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/WP_001143.jpg',
+    img: '/images/StructuredCabling/ProjectPhase1/IMG-20130911-00270.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/WP_001152.jpg',
+    img: '/images/StructuredCabling/ProjectPhase1/IMG-20130911-00272.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/WP_001155.jpg',
+    img: '/images/StructuredCabling/ProjectPhase1/IMG-20130923-00302.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/WP_001177.jpg',
+    img: '/images/StructuredCabling/ProjectPhase1/Lagos-20130908-00189.jpg',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject1/WP_001179.jpg',
+    img: '/images/StructuredCabling/ProjectPhase1/Lagos-20130908-00191.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/StructuredCabling/ProjectPhase1/Lagos-20130911-00208.jpg',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/StructuredCabling/ProjectPhase1/Lagos-20130911-00213.jpg',
   },
 ]
-const projects2 = [
+
+const project2 = [
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1933.JPG',
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06900.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1938.JPG',
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06909.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1940.JPG',
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06935.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1941.JPG',
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06940.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1943.JPG',
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06947.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1944.JPG',
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06949.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1950.JPG',
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06951.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1952.JPG',
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06953.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1959.JPG',
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06958.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1962.JPG',
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06963.JPG',
   },
   {
     id: uuidv4(),
-    img: '/images/networkAdministration/networkingProject2/IMG_1966.JPG',
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06969.JPG',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06972.JPG',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06977.JPG',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06978.JPG',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/StructuredCabling/ProjectPhase2/DSC06986.JPG',
+  },
+  {
+    id: uuidv4(),
+    img: '/images/StructuredCabling/ProjectPhase2/IMG-20130908-00253.jpg',
   },
 ]
 
@@ -142,8 +171,8 @@ const StructuredCabling = () => {
     <>
     <Head>
       {/* <meta name="viewport" content="width=device-width,initial-scale=1"/> */}
-        <title>System Integration</title>
-        <meta name="description" content="Elonatech Nigeria Limited - System Integration Page" />
+        <title>Structured Cabling</title>
+        <meta name="description" content="Elonatech Nigeria Limited - Structured Cabling Page" />
         <link rel="icon" href="/elona-icon.png" />
     </Head>
     <Box sx={whoWeAreHeader}>
@@ -225,6 +254,34 @@ const StructuredCabling = () => {
             // style={{padding: '0 5rem'}}
           >
               {projects.map((project)=> (
+                <SplideSlide key={project.id}>
+                    <img src={project.img} style={{width: '400px', height: '350px'}} alt="Image 1" />
+                </SplideSlide>
+              ))}
+        </Splide>
+        </Box>
+      <Box mt={4} sx={fancyBox2}>
+        <Typography variant='subtitle1' fontWeight={700} textTransform='uppercase' maxWidth='80%' margin='auto' textAlign='center' marginBottom='1rem'>
+        Sub-Contractor to Pine Height Systems on Networking/Structured Cabling of an 8 Floor Luxury flat Building (96 Points) LAN Setup for Samsung Electronics Nigeria Ltd. At Admiralty way, Lekki Phase 1. Project Phase 1
+        </Typography>
+          <Splide
+            options={{
+              type: "loop",
+              drag: "free",
+              arrows: true,
+              pagination: false,
+              perPage: 3,
+              autoScroll: {
+                pauseOnHover: true,
+                pauseOnFocus: false,
+                rewind: true,
+                speed: 1
+              }
+            }}
+            extensions={{ AutoScroll }}
+            // style={{padding: '0 5rem'}}
+          >
+              {project2.map((project)=> (
                 <SplideSlide key={project.id}>
                     <img src={project.img} style={{width: '400px', height: '350px'}} alt="Image 1" />
                 </SplideSlide>

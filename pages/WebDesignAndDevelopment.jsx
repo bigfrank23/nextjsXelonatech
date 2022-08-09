@@ -14,6 +14,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { useState } from 'react';
+import ContactBanner from '../components/contactBanner/ContactBanner';
 
 // import "./styles.css";
 
@@ -384,7 +385,7 @@ const whoWeAreHeader = {
                 </Box>
             </Box>
             <Button variant='contained' color='primary' sx={{display: 'flex', margin: 'auto', marginTop: '2rem'}}>Contact Us Now</Button> */}
-            <img src="/images/banner2.png" alt="" style={{width: '100%', height: '300px'}} />
+            <ContactBanner />
         
     </Box>
     <Box sx={{background: '#ddd', padding: '2rem 10rem 5rem 10rem', display: 'flex', gap: '2rem'}}>

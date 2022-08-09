@@ -205,7 +205,7 @@ const Navbar = () => {
                             <Link href='/networkingEquipment/NetworkingEquipment'>
                               <li className={styles.hardwareSolutionsListItem}>
                               <img src="https://img.icons8.com/ios/50/000000/outlet-switch.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
-                              Networking Equipment Maintenance
+                              Network Equipment Maintenance
                               </li>
                             </Link>
                           </ul>

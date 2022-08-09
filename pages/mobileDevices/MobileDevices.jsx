@@ -4,7 +4,9 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { Box, Typography } from '@mui/material'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import BuildCircleIcon from '@mui/icons-material/BuildCircle';
 import AnimatedText from 'react-animated-text-content';
+import ContactBanner from '../../components/contactBanner/ContactBanner';
 
 
 
@@ -88,10 +90,12 @@ const MobileDevices = () => {
   return (
     <>
     <Box sx={whoWeAreHeader}>
-    <Box sx={{textAlign: 'justify'}}>
+    <Box sx={{textAlign: 'center'}}>
         <Typography variant='h4' color='#fff' mb='2rem'>Mobile Device Repair</Typography>
-        <Typography variant='h5' color='#fff' mb='1rem'>Excellence, Professionalism, Integrity & Convinient Service</Typography>
-        <Typography variant='body1' color="#fff">Leading provider of innovative information technologies <br /> that improve the quality of lives</Typography>
+        <Typography variant='h5' color='#fff' mb='1rem'>Excellence, Professionalism, Integrity & Convenient Service</Typography>
+        <Typography variant='body1' color="#fff">
+        We assess mobile phones functionality, install and update phone software, troubleshoot wiring problems, <br /> and replace damaged parts
+        </Typography>
     </Box>
     </Box>
     <Box sx={fancyBox}>
@@ -128,11 +132,11 @@ const MobileDevices = () => {
         </Box>
     </Box>
     <Box sx={{background: '#fff', position: 'absolute', top: '50%', width: '100%', padding: '6rem'}} />
-    <Box sx={{background: '#fff', position: 'relative', width: '100%', padding: '5rem'}}>
+    <Box sx={{background: '#fff', position: 'relative', width: '100%', padding: '0 5rem 5rem 5rem'}}>
         <Box sx={{display: 'flex'}}>
           <Box>
             <Typography variant='h4' color='#34548c'>Most Common Phone Repair Issues</Typography>
-            <Typography variant='h6' color='#34548c'>Listed below</Typography>
+            {/* <Typography variant='h6' color='#34548c'>Listed below</Typography> */}
             <hr className='my-2 mb-4' style={{background: 'red', width: "50px", height: "2px"}} />
             <Box component='ul' sx={{m: 0, p: 0, listStyle: 'none', color: '#5a5a5a', fontWeight: 400, flex: 1, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '2rem'}}>
               <Box component='li' sx={{display: 'flex', gap: '5px'}}>
@@ -190,24 +194,40 @@ const MobileDevices = () => {
           </Box>
         </Box>
     </Box>
-    <Box>
+    <Box sx={{background: '#fff'}}>
       <img src="/images/phoneRepairBanner.png" alt="" style={{height: '450px'}} />
     </Box>
-    <Box sx={{background: '#34548c', padding: '2rem 10rem 2rem 10rem', display: 'flex', gap: '2rem'}}>
-        <Box>
+    <Box sx={{background: 'linear-gradient(180deg, rgba(87,111,139,1) 0%, rgb(79 103 129) 36%, rgb(61 83 107) 98%)', padding: '0rem 0rem 0rem 10rem', display: 'flex', gap: '2rem'}}>
+        <Box p={3}>
+        <Typography variant='h5' color='#fff' textAlign='center' my={1}><BuildCircleIcon sx={{fontSize: '2rem'}} /></Typography>
           <Typography variant='h6' fontStyle='italic' color='#fff'>
           As technology advances, devices utilizing these technologies become smaller and smaller. 
           Today&apos;s cell phones have more computing power than past computers that took up an entire room of space. 
           Modern mobile devices allow users to hold the world, or at least all of its information, 
           maps, and games in their hands.
           </Typography>
+          <Typography variant='h6' fontStyle='italic' mt={2} color='#fff'>
+            We repair all types of gadgets ranging from phones to tabs, smart watches, cameras, Bluetooth speakers and many more.
+            We offer pick up services, our seasoned and experienced Phone Repair Technicians are available, to proffer solution to different phone challenges.
+          </Typography>
         </Box>
         <Box>
-          <img src="/images/mobileHeader.jpg" alt="" />
+          <img src="/images/bannerFlipped2.png" alt="" style={{width: '100%', height: '100%'}} />
         </Box>
     </Box>
+    <Box component='section' sx={{display: 'flex', padding: '0rem 0rem 0rem 10rem', height: '350px', background: '#fff'}}>
+      <Box sx={{flex: 1}}>
+        <img src="/images/mobileRight2.jpg" alt="" style={{width: '100%', height: '100%'}} />
+      </Box>
+      <Box sx={{flex: 1, p: 5}}>
+        <Typography variant='h6'>
+        Our mobile phone repair technicians run tests to assess the mobile phones&apos; functionality, 
+        install and update phone software, troubleshoot wiring problems, and replace damaged parts and components such as batteries, LCD screens, keypads, buttons. They also advise their clients on warranty issues and recommend products based on their expertise.
+        </Typography>
+      </Box>
+    </Box>
     <Box>
-      <img src="/images/banner2.png" alt="" style={{width: '100%', height: '300px'}} />
+      <ContactBanner />
     </Box>
     </>
   )

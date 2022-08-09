@@ -8,6 +8,7 @@ import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import LaptopWindowsOutlinedIcon from '@mui/icons-material/LaptopWindowsOutlined';
 import AnimatedText from 'react-animated-text-content';
 import MovingComponent from 'react-moving-text'
+import ContactBanner from "../../components/contactBanner/ContactBanner";
 
 
 const whoWeAreHeader = {
@@ -38,7 +39,7 @@ const whoWeAreHeader = {
 const Computers = () => {
   return (
     <>
-    <Box component='div' sx={whoWeAreHeader}>
+    <Box component='header' sx={whoWeAreHeader}>
         <Box sx={{textAlign: 'center'}}>
         <Typography variant='h4' color='#fff'>Computer Engineering</Typography>
         <Typography variant='h5' color='#fff'>Because your business works when your hardware works.</Typography>
@@ -51,15 +52,22 @@ const Computers = () => {
             </Box>
         </Box>
     </Box>
-    <Box component='div' sx={{display: 'flex', background: '#fff', padding: '4rem 2rem 2rem 2rem'}}>
+    <Box component='section' sx={{display: 'flex', background: '#fff', padding: '4rem 2rem 2rem 2rem'}}>
         <Box sx={{flex: 1, display: 'flex', justifyContent: 'center'}}><img src="/images/computer-repair2.jpg" alt="" style={{width: '80%', borderRadius: '10px', boxShadow: '10px 2px 10px 8px blueviolet'}} /></Box>
         <Box  sx={{flex: 1, padding: '2rem'}}>
             <Typography variant="h6">
             For specialized hardware services, we have highly skilled full-time computer hardware techs who can fix all types of hardware problems including power jacks, keyboards, screens, fans, overheating issues, liquid spills, soldering jobs, loose cabling, and replacement of motherboards and discrete video cards.
             </Typography>
+            <Box mt={1}>
+            <Typography variant='h6'> While computer hardware configurations vary widely, we work on a broad range of hardware systems:  </Typography>
+            <Box component='ul'  sx={{m: 0, p: 0, listStyle: 'none'}}>
+                <Box component='li' sx={{display: 'flex'}}> <AdjustIcon sx={{alignSelf: 'center'}} /> <Typography variant="h6"> Client Computer Systems (Desktop & Laptop PCs)</Typography></Box>
+                <Box component='li' sx={{display: 'flex'}}> <AdjustIcon sx={{alignSelf: 'center'}} /> <Typography variant="h6"> Servers & Workstations</Typography></Box>
+            </Box>
+        </Box>
         </Box>
     </Box>
-    <Box component='div' sx={{display: 'flex', background: '#ccc', paddingLeft: '2rem', paddingRight: '2rem'}}>
+    <Box component='section' sx={{display: 'flex', background: '#ccc', paddingLeft: '2rem', paddingRight: '2rem'}}>
         <Box sx={{flex: '1', p: 6}}>
             {/* <Typography variant="subtitle1" color='#fff'>Excellence, Professionalism, Integrity & Convinient Service</Typography> */}
             <Typography variant="h3" fontWeight={600} my={3}>Desktop and Laptop PCs</Typography>
@@ -101,8 +109,8 @@ const Computers = () => {
             <Button variant="contained" color="error" endIcon={<ContactPhoneOutlinedIcon/>}>Contact us now</Button>
         </Box>
     </Box> */}
-    <Box>
-        <img src="/images/banner2.png" style={{height: '300px', width: '100%'}} alt="" />
+    <Box component='section'>
+        <ContactBanner />
     </Box>
     </>
   )
