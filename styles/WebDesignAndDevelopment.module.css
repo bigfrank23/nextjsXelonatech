@@ -23,7 +23,7 @@
     background: linear-gradient(0deg, rgba(52, 84, 140, 0.9), rgba(52, 84, 140, 0.9));
     color: #fff;
     font-weight: 900 !important;
-    padding: 2rem;
+    padding: 0rem;
     height: 0;
     width: 100%;
     overflow: hidden;
@@ -31,8 +31,8 @@
     transition: height .25s linear;
 }
 .webInnerCardImg:hover .fullOverlay{
-    padding: 2rem;
-    height: 150px;
+    padding: 5px 2rem;
+    height: 90px;
     width: 100%;
     font-weight: 900 !important;
     color: #ddd;

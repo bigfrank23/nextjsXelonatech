@@ -213,8 +213,9 @@ const whoWeAreHeader = {
     <>
     <Box component='div' sx={whoWeAreHeader}>
         <Box sx={{flex: 1}}>
-        <Typography variant='h4' color='#fff'>Lets Build an Amazing Website <br /> for your Brand</Typography>
-        <Typography variant='h6' color='#fff' my={2}>Excellence, Professionalism, Integrity & Convenient Service</Typography>
+        <Typography variant='h4' color='#fff'>Web Design & Development</Typography>
+        <Typography variant='h5' color='#fff' my={2}>Lets Build an Amazing Website <br /> for your Brand</Typography>
+        <Typography variant='body1' color='#fff' mb={2}>Excellence, Professionalism, Integrity & Convenient Service</Typography>
         {/* <Typography variant='body1' color="#fff" my={2}>Leading provider of innovative information technologies <br /> that improve the quality of lives</Typography> */}
         <Button color='primary' variant='contained'>Contact Us</Button>
         </Box>
@@ -356,9 +357,9 @@ const whoWeAreHeader = {
                 <Link href={project.web}>
                     <Box component='div' className={styles.webInnerCardImg} style={{background: `url(${project.img})`}}>
                         <Box className={styles.fullOverlay}>
+                                <OpenInNewIcon sx={{fill: '#d32f2f'}} />
                             <Typography variant='subtitle1' fontWeight={600} textTransform='uppercase'>{project.name}</Typography>
                             {/* <Link href={project.web}> */}
-                                <OpenInNewIcon sx={{fill: '#d32f2f'}} />
                             {/* </Link> */}
                         </Box>
                     </Box>

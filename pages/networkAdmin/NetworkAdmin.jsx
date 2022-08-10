@@ -321,7 +321,7 @@ const NetworkAdmin = () => {
             <Box>
               <img src="/images/q4.jpg" alt="" style={{width: "100%", height: "100%", borderRadius: '10px'}} />
             </Box>
-            <Box sx={{width: '600px', background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/q1.webP")', padding: '2rem', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', borderRadius: '10px', display: 'grid', placeItems: 'center'}}>
+            <Box sx={{width: '600px', background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/q1.webp")', padding: '2rem', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', borderRadius: '10px', display: 'grid', placeItems: 'center'}}>
             <Typography variant='h6' textAlign='center' color="#fff" fontWeight={700}>WHY DO I NEED A NETWORK ADMINISTRATOR?</Typography>
               <Typography variant='body1' color="#fff">
               Every organization that uses more than one computer or software platform needs a network administrator to coordinate and connect all the different systems; Configure network hardware such as servers, routers, and switches; Upgrade, repair, and maintain computer networks; and troubleshoot various network issues.
@@ -331,7 +331,7 @@ const NetworkAdmin = () => {
           </Box>
         </Box>
         <Box sx={{marginTop: '4rem'}}>
-          <Typography variant='h4' textAlign='center' color='#34548c' textTransform='capitalize'>Some of our recent completed projects</Typography>
+          <Typography variant='h4' textAlign='center' color='#34548c' textTransform='capitalize' fontWeight={700}>Some of our recently completed projects</Typography>
           <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />
           <Box sx={fancyBox2}>
             <Typography variant='subtitle1' fontWeight={700} textTransform='uppercase' maxWidth='80%' margin='auto' textAlign='center' marginBottom='1rem'>
@@ -356,7 +356,7 @@ const NetworkAdmin = () => {
               >
                   {projects.map((project)=> (
                     <SplideSlide key={project.id}>
-                        <img src={project.img} style={{width: '400px', height: '350px'}} alt="Image 1" />
+                        <img src={project.img} style={{width: '450px', height: '480px'}} alt="Image 1" />
                     </SplideSlide>
                   ))}
             </Splide>
@@ -384,7 +384,7 @@ const NetworkAdmin = () => {
               >
                   {projects2.map((project)=> (
                     <SplideSlide key={project.id}>
-                        <img src={project.img} style={{width: '450px', height: '350px'}} alt="Image 1" />
+                        <img src={project.img} style={{width: '450px', height: '480px'}} alt="Image 1" />
                     </SplideSlide>
                   ))}
             </Splide>
