@@ -199,14 +199,14 @@ const MobileDevices = () => {
     </Box>
     <Box sx={{background: 'linear-gradient(180deg, rgba(87,111,139,1) 0%, rgb(79 103 129) 36%, rgb(61 83 107) 98%)', padding: '0rem 0rem 0rem 10rem', display: 'flex', gap: '2rem'}}>
         <Box p={3}>
-        <Typography variant='h5' color='#fff' textAlign='center' my={1}><BuildCircleIcon sx={{fontSize: '2rem'}} /></Typography>
-          <Typography variant='h6' fontStyle='italic' color='#fff'>
+        {/* <Typography variant='h5' color='#fff' textAlign='center' my={1}><BuildCircleIcon sx={{fontSize: '2rem'}} /></Typography> */}
+          <Typography variant='h6' color='#fff'>
           As technology advances, devices utilizing these technologies become smaller and smaller. 
           Today&apos;s cell phones have more computing power than past computers that took up an entire room of space. 
           Modern mobile devices allow users to hold the world, or at least all of its information, 
           maps, and games in their hands.
           </Typography>
-          <Typography variant='h6' fontStyle='italic' mt={2} color='#fff'>
+          <Typography variant='h6' mt={2} color='#fff'>
             We repair all types of gadgets ranging from phones to tabs, smart watches, cameras, Bluetooth speakers and many more.
             We offer pick up services, our seasoned and experienced Phone Repair Technicians are available, to proffer solution to different phone challenges.
           </Typography>
@@ -220,9 +220,12 @@ const MobileDevices = () => {
         <img src="/images/mobileRight2.jpg" alt="" style={{width: '100%', height: '100%'}} />
       </Box>
       <Box sx={{flex: 1, p: 5}}>
-        <Typography variant='h6'>
+        <Typography variant='subtitle1' fontWeight={600}>
         Our mobile phone repair technicians run tests to assess the mobile phones&apos; functionality, 
         install and update phone software, troubleshoot wiring problems, and replace damaged parts and components such as batteries, LCD screens, keypads, buttons. They also advise their clients on warranty issues and recommend products based on their expertise.
+        </Typography>
+        <Typography variant='subtitle1' mt={2} fontWeight={600}>
+        We also handle Mobile Software Issues. Here at Elonatech we run all the major Software Tools for Mobile Phone Repairs. With these Software Tools we fix all software related problems of all iPhone and Android Smartphones of any Brand and Model including - Samsung, Apple iPhone etc.
         </Typography>
       </Box>
     </Box>

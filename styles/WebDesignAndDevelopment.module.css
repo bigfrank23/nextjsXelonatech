@@ -1,9 +1,9 @@
 .webInnerCardImg{
     /* background: url('/images/pc.jpg'); */
-    background-position: center !important;
+    background-position: top !important;
     background-size: cover !important;
     width: 90%;
-    height: 300px;
+    height: 350px;
     position: relative;
     cursor: pointer;
 }
@@ -20,8 +20,8 @@
 .fullOverlay{
     position: absolute;
     bottom: 0;
-    background: linear-gradient(0deg, rgba(221, 221, 221, .9), rgba(221, 221, 221, .9));
-    color: #34548c;
+    background: linear-gradient(0deg, rgba(52, 84, 140, 0.9), rgba(52, 84, 140, 0.9));
+    color: #fff;
     font-weight: 900 !important;
     padding: 2rem;
     height: 0;
@@ -35,5 +35,5 @@
     height: 150px;
     width: 100%;
     font-weight: 900 !important;
-    color: red;
+    color: #ddd;
 }

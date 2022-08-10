@@ -51,6 +51,7 @@ const whoWeAreHeader = {
     border: '1px solid rgba(255, 255, 255, .25)',
     boxShadow: '0 0 10px 1px rgba(0, 0, 0, .25)',
     padding: '2rem 4rem 4rem 4rem',
+    height: '400px',
     // filter: 'drop-shadow(2px 5px 6px #E7EBF0)',
     transition: 'transform .25s ease',
     '&:hover': {
@@ -68,57 +69,57 @@ const whoWeAreHeader = {
     const items = [
         {
             id: uuidv4(),
-            icon: 'fa fa-bolt',
-            h3: 'Super Fast Loading In Less Than 3 Seconds',
-            p: "Your Website Will Be Hosted On The World's Fastest Litespeed Web Server To Ensure A Smooth User Experience"
+            icon: '/logoAndIcons/bolt.png',
+            h3: 'Super fast loading in less than 3 seconds',
+            p: "Your website will be hosted on the world's fastest LiteSpeed Web Server to ensure a smooth user experience"
         },
         {
             id: uuidv4(),
-            icon: 'fa fa-mobile',
+            icon: '/logoAndIcons/responsive-design.png',
             h3: 'Mobile, Tablet & Desktop Responsive Sites',
-            p: "Your Customers/Clients Will Be Able To Easily Access Your Website From Desktop, Tablet And Mobile Devices"
+            p: "Your Customers/Clients will be able to easily access your website from desktop, tablet and mobile devices"
         },
         {
             id: uuidv4(),
-            icon: 'UI/UX',
+            icon: '/logoAndIcons/uiux.png',
             h3: 'UI/UX. Preview Your Project',
-            p: "After all enquiries, the next step is to build a prototype by designing the User Interface (UI) and make the website have an excellent User Experience (UX), so the client can have a feel of exactly how the website will look. " 
+            p: "You can have a feel of exactly how the website will look. We'll design a prototype with an excellent User Interface (UI) & User Experience (UX)" 
         },
         {
             id: uuidv4(),
-            icon: 'LayersIcon',
-            h3: 'Premium Designs And Exclusive Branding',
-            p: "Expect Nothing Less Than A Premium Website That Will Allow You Stand Out From Your Competitors" 
+            icon: '/logoAndIcons/web-design.png',
+            h3: 'Premium Designs and Exclusive Branding',
+            p: "Expect nothing less than a Premium Website that will allow you stand out from your competitors" 
         },
         {
             id: uuidv4(),
-            icon: 'LayersIcon',
+            icon: '/logoAndIcons/good-conversion-rate.png',
             h3: 'Built For Conversions, Leads And Sales',
-            p: "We Tailor All Our Design Elements And Functionalities To Help You achieve All Your Business Objectives" 
+            p: "We tailor all our design elements and functionalities to help you achieve all your business objectives" 
         },
         {
             id: uuidv4(),
-            icon: 'LayersIcon',
+            icon: '/logoAndIcons/custom-email.png',
             h3: 'Unlimited Custom Email For You & Your Staff',
-            p: "We Tailor All Our Design Elements And Functionalities To Help You achieve All Your Business Objectives" 
+            p: "Create your vibe with an ultra-secure custom email address - one that uses your own domain name." 
         },
         {
             id: uuidv4(),
-            icon: 'LayersIcon',
+            icon: '/logoAndIcons/web-technologies.png',
             h3: 'Built With The Most Advanced Technologies',
-            p: "We Are Experts In All Major Web Technologies Like Laravel, codeigniter, WordPress, Magento, & Several Others" 
+            p: "We are experts in all major web technologies like React, Express, MongoDB, Laravel, CodeIgniter, WordPress, & several others" 
         },
         {
             id: uuidv4(),
-            icon: 'LayersIcon',
+            icon: '/logoAndIcons/ssl.png',
             h3: 'Guaranteed Security With SSL Encryption',
-            p: "Your Website Will be Secured With The World's Best SSL Encryption To Guarantee Constant Security" 
+            p: "Your website will be secured with the world's best SSL encryption to guarantee constant security" 
         },
         {
             id: uuidv4(),
-            icon: 'LayersIcon',
-            h3: 'Continues Maintenance, Updates & Back-ups',
-            p: "Even After Project Completion, We Will Still Continue To Carry Out Regular Updates, Bug Fix & Monthly Back-Ups" 
+            icon: '/logoAndIcons/engineering.png',
+            h3: 'Continuous Maintenance, Updates & Back-Ups',
+            p: "Even after project completion, we will still continue to carry out regular updates, bug fixes & monthly back-ups" 
         },
     ]
 
@@ -134,43 +135,43 @@ const whoWeAreHeader = {
             id: uuidv4(),
             img: '/images/webProjects/HyperthreadVentures.png',
             web: '"https://hyperthread.com.ng"',
-            name: 'Hyperthread Ventures'
+            name: 'Hyperthread Ventures Limited'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/KappachemLaboratory.png',
             web: '"https://kappachemlabs.com"',
-            name: 'Kappachem Laboratory'
+            name: 'Kappachem Laboratory Services'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/PFNLagosState.png',
             web: '"https://pfnlagosstate.org"',
-            name: 'pentecostal Fellowship of Nigeria, Lagos State'
+            name: 'Pentecostal Fellowship of Nigeria (PFN), Lagos State.'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/RemabenScientific.png',
             web: '"https://https://remabenscientific.com/"',
-            name: 'Remaben Scientific'
+            name: 'Remaben Scientific Services Limited'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/SafebrooksNigeria.png',
             web: '"https://https://www.safebrooks.com.ng/"',
-            name: 'Safebrooks'
+            name: 'Safebrooks Nigeria Limited'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/SupremeFamily.png',
             web: '"https://supremefamily.org"',
-            name: 'Supreme Family'
+            name: 'Supreme Family Entertainment International Initiative'
         },
         {
             id: uuidv4(),
             img: '/images/webProjects/TheHomeBuildersMinistries.png',
             web: '"https://thbcmi.org"',
-            name: 'The home builders Ministry'
+            name: 'The Home-Builders Christian Ministry International'
         },
 
     ]
@@ -226,16 +227,17 @@ const whoWeAreHeader = {
         <Typography variant='h5' color='#34548c'>Need A Website For Your Brand?</Typography>
         <hr className='my-2' style={{background: 'red', width: "50px", height: "2px"}} />
         <Typography variant='body2' my={2}>
-        Well, You Have Come To The Right Place, At Pejul Digital Agency, We Pride Ourselves To Be One Of Lagos&apos; Leading Website Design & Development Company Whos Core Value is Transparency And Results
+        Well, you have come to the right place, At Elonatech Nigeria Limited, We are One Of Nigeria's leading Website Design & Development Company Who's Core Values are Excellence, Professionalism, Integrity & Convenient Service.
         </Typography>
         <Typography variant='body2' my={2}>
-        We Design & Develop All Types Of Websites And Web Application At The Lowest Rate Possible. We  Also Provide Other Premium Services Like Business Software Development, Mobile App Development, Online Advertisments Like Google Ads, Youtube Ads, Display Ads And Even Consultation  & Training Services. 
+        We Design & Develop all kinds Of Websites and Web applications with the most suitable platforms at a friendly budget. We offer premium web services such as Business Software Development, Mobile App Development, Web Based Apps etc.
         </Typography>
         <Typography variant='body2' my={2}>
-        We won&apos;t just build you an ordinary website but also develop a marketing strategy that can utilize the website and your marketing channels to generate constant leads, sales, customers, and clients.
+        We ensure that your needs are understood and implemented correctly. In fact, we are dedicated to the creation of a site that helps you become a success.
+        Our specialty lies in providing comprehensive and custom web development services that provide you with a functional and complete solution. The sites we develop are highly scalable with a great degree of usability. As a website development company, we also ensure the site responds fast and is SEO friendly with an excellent User Interface (UI) and User Experience (UX). You also get to enjoy complete control over your site. With our website development, you do not have to adjust your specifications to the capabilities of a given platform or change your design visions to fit a template. We deliver the work precisely to your requirements.
         </Typography>
         <Typography variant='body2' my={2}>
-        If you are ready to become the best in your industry and also stand out from a sea of hungry competitors, then Pejul Digital Agency is the partner you need. Get in touch with us below, lets take your business to the next level
+        We won't just build you an ordinary website but also develop a marketing strategy that can utilize the website and your marketing channels to generate constant leads, sales, customers, and clients.
         </Typography>
         </Box>
         <Box sx={{textAlign: 'center', flex: 1}}>
@@ -251,7 +253,8 @@ const whoWeAreHeader = {
                 <Box sx={glassBox}>
                     <Box sx={{background: '#fff', width: '50px', height: '50px', borderRadius: '50%', position: 'relative'}}>
                         <Box sx={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'red'}}>
-                        <i className={item.icon} aria-hidden="true" />
+                        {/* <i className={item.icon} aria-hidden="true" /> */}
+                        <img src={item.icon} alt="" style={{width: '25px', height: '25px'}} />
                         </Box>
                     </Box>
                     <Typography variant='h6' fontWeight={600} my={2} color='#fff' textTransform='capitalize'>{item.h3}</Typography>
@@ -317,13 +320,15 @@ const whoWeAreHeader = {
             We also ensure your website ranks high on most of the major search engines, Google, Yahoo, Bing etc.
             </Typography>
             <Box sx={{textAlign: 'center', mt: 3}}>
-                <Button variant='contained' color='error'>View All</Button>
+                <Link href='#' sx={{textDecoration: 'none'}}>
+                    <Button variant='contained' color='error'>Read More</Button>
+                </Link>
             </Box>
             {/* <Typography variant='h6' textAlign='center' color='#fff'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam reiciendis nemo ab neque corporis,</Typography> */}
         </Box>
     </Box>
     
-    <Box sx={{background: '#021048', padding: '5rem 0rem 5rem 0rem'}}>
+    <Box sx={{background: '#021048', padding: '1rem 0rem 1rem 0rem'}}>
     <Typography variant='h4' color='#fff' textAlign='center'>Some Of Our Projects</Typography>
         <Typography variant='h6' color='#fff' textAlign='center'>Web Development/Web Design</Typography>
         <hr className='m-auto mt-2 mb-4' style={{background: 'red', width: "50px", height: "2px"}} />
@@ -353,7 +358,7 @@ const whoWeAreHeader = {
                         <Box className={styles.fullOverlay}>
                             <Typography variant='subtitle1' fontWeight={600} textTransform='uppercase'>{project.name}</Typography>
                             {/* <Link href={project.web}> */}
-                                <OpenInNewIcon />
+                                <OpenInNewIcon sx={{fill: '#d32f2f'}} />
                             {/* </Link> */}
                         </Box>
                     </Box>
@@ -390,12 +395,12 @@ const whoWeAreHeader = {
     </Box>
     <Box sx={{background: '#ddd', padding: '2rem 10rem 5rem 10rem', display: 'flex', gap: '2rem'}}>
         <Box sx={{flex: 1, width: '50%'}}>
-        <Typography variant='h5' color='#34548c' textAlign='center'>OUR WEB DESIGN AND DEVELOPMENT SERVICE COVERS</Typography>
+        <Typography variant='h5' color='#34548c' textAlign='center'>OUR WEB DESIGN AND DEVELOPMENT</Typography>
         <hr className='m-auto mt-2 mb-4' style={{background: 'red', width: "50px", height: "2px"}} />
         <Box sx={glassBox2}>
-            <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} swipeable={true} stopOnHover={true}>
+            <Carousel showIndicators={false} showThumbs={false} autoPlay={true} infiniteLoop={true} swipeable={true} stopOnHover={true}>
             {datas.map((data)=> (
-                <Box key={data.id}>
+                <Box key={data.id} p={3}>
                     <img src="/logoAndIcons/logo2.png" alt="black-logo" style={{width: '30px', height: '30px'}} />
                     <Typography variant='h6' color='#34548c' fontWeight={600} mb={2}>{data.h1}</Typography>
                     <Typography variant='subtitle1'>{data.p}</Typography>

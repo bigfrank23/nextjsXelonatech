@@ -236,10 +236,12 @@ const Navbar = () => {
                               Structured cabling
                             </li>
                           </Link>
+                          <Link href='/CCTVinstallation'>
                             <li className={styles.networkAdministrationListItem}>
                             <img src="https://img.icons8.com/dotty/80/000000/wallmount-camera.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
                               CCTV Installation
                             </li>
+                          </Link>
                             <li className={styles.networkAdministrationListItem}>
                             <img src="/logoAndIcons/internet.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
                               Internet Solutions

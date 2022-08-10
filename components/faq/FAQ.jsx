@@ -5,6 +5,7 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import { Box } from '@mui/material';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -43,7 +44,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function FAQ() {
-  const [expanded, setExpanded] = React.useState('panel1');
+  const [expanded, setExpanded] = React.useState('false');
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
@@ -53,6 +54,7 @@ export default function FAQ() {
     <>
         <Typography variant='h5' color='#34548c' textAlign='center'>FAQ</Typography>
         <hr className='m-auto mt-2 mb-4' style={{background: 'red', width: "50px", height: "2px"}} />
+        <Box sx={{height: '400px'}}>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           <Typography fontWeight={600} color='#34548c'>WHAT DOMAIN NAME SHOULD I CHOOSE?</Typography>
@@ -69,7 +71,7 @@ export default function FAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          The cost of a website varies depends on its complexity. We are happy to discuss your requirements and provide a quote at any time.
+          The cost of a website varies depending on the complexity. We are happy to discuss your requirements and provide a quote at any time.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -85,12 +87,11 @@ export default function FAQ() {
       </Accordion>
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography fontWeight={600} color='#34548c'>WHAT KIND OF BUSINESSES DO YOU WORK WITH?</Typography>
+          <Typography fontWeight={600} color='#34548c'>WHAT KIND OF BUSINESS DO YOU WORK WITH?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          We work with a broad range of company types [small start-ups, large corporations, nonprofits, B2B, B2C and more] across many business industries [technology, food, apparel, health + beauty, camps, travel, finance, arts, fair trade, and more.]
-            Over the years, we’ve helped businesses improve customer service, market their products, and attract customers. Functionality requests range from basic to advanced. Our team takes the time to get to know your industry, organization, and competitors to ensure your site supports all of your goals.
+          We work with a broad range of company types [small start-ups, large corporations, nonprofits, B2B, B2C and more] across many business industries [technology, food, apparel, health + beauty, camps, travel, finance, arts, fair trade, and more.] Over the years, we’ve helped businesses improve customer service, market their products, and attract customers. Functionality requests range from basic to advanced. Our team acquaint themselves with your industry, organization, and competitors to ensure your site supports all of your goals. 
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -124,6 +125,7 @@ export default function FAQ() {
           </Typography>
         </AccordionDetails>
       </Accordion>
+        </Box>
     </>
   );
 }
