@@ -8,11 +8,13 @@ const whoWeAreHeader = {
     width: "100%", 
     padding: '5rem',
     display: 'flex', 
-    flexDirection: "column", 
+    // flexDirection: "column", 
     alignItems: 'center', 
     justifyContent: 'center', 
     gap: '3rem',
-    background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("/images/web-design.jpg") center 100% / cover transparent',
+    background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("/images/system-integration.jpg")',
+    backgroundPosition: 'bottom',
+    backgroundSize: '90% 100%',
   }
 
   const modalStyle = {
@@ -61,11 +63,16 @@ const SystemIntegration = () => {
         <meta name="description" content="Elonatech Nigeria Limited - System Integration Page" />
         <link rel="icon" href="/elona-icon.png" />
     </Head>
-    <Box sx={whoWeAreHeader}>
-        <Box sx={{textAlign: 'center'}}>
-        <Typography variant='h4' color='#fff' mb='2rem'>System Integration</Typography>
-        <Typography variant='h5' color='#fff' mb='1rem'>Excellence, Professionalism, Integrity & Convinient Service</Typography>
-        <Typography variant='body1' color="#fff">Leading provider of innovative information technologies <br /> that improve the quality of lives</Typography>
+    <Box component='div' sx={whoWeAreHeader}>
+        <Box sx={{flex: 1}}>
+        <Typography variant='h4' color='#fff'>System Integration</Typography>
+        <Typography variant='h5' color='#fff' my={2}>Building intelligence system to better your business' efficiency and profit</Typography>
+        <Typography variant='body1' color='#fff' mb={2}>Integrating existing, and often disparate systems in a way that focuses on increasing values</Typography>
+        {/* <Typography variant='body1' color="#fff" my={2}>Leading provider of innovative information technologies <br /> that improve the quality of lives</Typography> */}
+        {/* <Button color='primary' variant='contained'>Contact Us</Button> */}
+        </Box>
+        <Box sx={{textAlign: 'center', flex: 1, alignSelf: 'baseline'}}>
+            <img src="/images/system-integration2.png" alt="" style={{width: '40%', height: '80%', objectFit: 'contain', marginLeft: '12rem'}}/>
         </Box>
     </Box>
     <Box

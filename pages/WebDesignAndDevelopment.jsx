@@ -211,6 +211,12 @@ const whoWeAreHeader = {
 
   return (
     <>
+    <Head>
+      {/* <meta name="viewport" content="width=device-width,initial-scale=1"/> */}
+        <title>Web Design & Development</title>
+        <meta name="description" content="Elonatech Nigeria Limited - Web Design & Development Page" />
+        <link rel="icon" href="/elona-icon.png" />
+    </Head>
     <Box component='div' sx={whoWeAreHeader}>
         <Box sx={{flex: 1}}>
         <Typography variant='h4' color='#fff'>Web Design & Development</Typography>
@@ -228,7 +234,7 @@ const whoWeAreHeader = {
         <Typography variant='h5' color='#34548c'>Need A Website For Your Brand?</Typography>
         <hr className='my-2' style={{background: 'red', width: "50px", height: "2px"}} />
         <Typography variant='body2' my={2}>
-        Well, you have come to the right place, At Elonatech Nigeria Limited, We are One Of Nigeria's leading Website Design & Development Company Who's Core Values are Excellence, Professionalism, Integrity & Convenient Service.
+        Well, you have come to the right place, At Elonatech Nigeria Limited, We are One Of Nigeria&apos;s leading Website Design & Development Company Who&apos;s Core Values are Excellence, Professionalism, Integrity & Convenient Service.
         </Typography>
         <Typography variant='body2' my={2}>
         We Design & Develop all kinds Of Websites and Web applications with the most suitable platforms at a friendly budget. We offer premium web services such as Business Software Development, Mobile App Development, Web Based Apps etc.
@@ -238,7 +244,7 @@ const whoWeAreHeader = {
         Our specialty lies in providing comprehensive and custom web development services that provide you with a functional and complete solution. The sites we develop are highly scalable with a great degree of usability. As a website development company, we also ensure the site responds fast and is SEO friendly with an excellent User Interface (UI) and User Experience (UX). You also get to enjoy complete control over your site. With our website development, you do not have to adjust your specifications to the capabilities of a given platform or change your design visions to fit a template. We deliver the work precisely to your requirements.
         </Typography>
         <Typography variant='body2' my={2}>
-        We won't just build you an ordinary website but also develop a marketing strategy that can utilize the website and your marketing channels to generate constant leads, sales, customers, and clients.
+        We won&apos;t just build you an ordinary website but also develop a marketing strategy that can utilize the website and your marketing channels to generate constant leads, sales, customers, and clients.
         </Typography>
         </Box>
         <Box sx={{textAlign: 'center', flex: 1}}>
