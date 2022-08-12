@@ -22,7 +22,9 @@ const whoWeAreHeader = {
     alignItems: 'center', 
     justifyContent: 'center', 
     gap: '3rem',
-    background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("/images/web-design.jpg") center 100% / cover transparent',
+    background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("/images/structured-cabling.jpg")',
+    backgroundPosition: 'bottom',
+    backgroundSize: '100% 100%',
   }
 
   const fancyBox2 = {
@@ -178,15 +180,15 @@ const StructuredCabling = () => {
     <Box sx={whoWeAreHeader}>
         <Box sx={{textAlign: 'center'}}>
         <Typography variant='h4' color='#fff' mb='2rem'>Structured Cabling</Typography>
-        <Typography variant='h5' color='#fff' mb='1rem'>Excellence, Professionalism, Integrity & Convinient Service</Typography>
-        <Typography variant='body1' color="#fff">Leading provider of innovative information technologies <br /> that improve the quality of lives</Typography>
+        <Typography variant='h5' color='#fff' mb='1rem'>Any System is Only As Reliable As Its Weakest Link.</Typography>
+        <Typography variant='body1' color="#fff">The standardized infrastructure of communications cabling that supports network components.</Typography>
         </Box>
     </Box>
-    <Box component='section' sx={{padding: '5rem 10rem 5rem 10rem', background: '#fff' }}>
+    {/* <Box component='section' sx={{padding: '5rem 10rem 5rem 10rem', background: '#fff' }}>
       <Box sx={{ width: '50%', background: 'whitesmoke', margin: 'auto'}}>
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <TabList justifyContent="space-around" onChange={handleChange} aria-label="lab API tabs example">
+            <TabList onChange={handleChange} aria-label="lab API tabs example">
               <Tab label="lorem Ipsium" value="1" wrapped />
               <Tab label="lorem Ipsium" value="2" />
               <Tab label="lorem Ipsium" value="3" />
@@ -228,7 +230,7 @@ const StructuredCabling = () => {
           </TabPanel>
         </TabContext>
       </Box>
-    </Box>
+    </Box> */}
     <Box>
     <Typography variant='h4' textAlign='center' color='#34548c' textTransform='capitalize'>Some of our recent completed projects</Typography>
       <hr className='m-auto my-3' style={{background: 'red', width: "50px", height: "2px"}} />

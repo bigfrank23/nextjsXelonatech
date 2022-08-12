@@ -53,7 +53,7 @@ const Computers = () => {
         </Box>
     </Box>
     <Box component='section' sx={{display: 'flex', background: '#fff', padding: '4rem 2rem 2rem 2rem'}}>
-        <Box sx={{flex: 1, display: 'flex', justifyContent: 'center'}}><img src="/images/computer-repair2.jpg" alt="" style={{width: '80%', borderRadius: '10px', boxShadow: '10px 2px 10px 8px blueviolet'}} /></Box>
+        <Box sx={{flex: 1, display: 'flex', justifyContent: 'center'}}><img src="/images/computer-repair2.jpg" alt="" style={{width: '80%', borderRadius: '10px', boxShadow: '10px 2px 10px 8px #34548c'}} /></Box>
         <Box  sx={{flex: 1, padding: '2rem'}}>
             <Typography variant="h6">
             For specialized hardware services, we have highly skilled full-time computer hardware techs who can fix all types of hardware problems including power jacks, keyboards, screens, fans, overheating issues, liquid spills, soldering jobs, loose cabling, and replacement of motherboards and discrete video cards.

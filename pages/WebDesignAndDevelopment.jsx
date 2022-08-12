@@ -15,6 +15,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import { useState } from 'react';
 import ContactBanner from '../components/contactBanner/ContactBanner';
+import Head from 'next/head';
 
 // import "./styles.css";
 

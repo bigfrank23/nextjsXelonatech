@@ -50,7 +50,7 @@ const NetworkingEquipment = () => {
     <Box component='section' sx={{padding: '3rem 1rem 3rem 1rem'}}>
         <Box component='div' sx={{padding: '2rem', display: 'flex', justifyContent: 'center', gap: '1rem'}}>
             <Box component='picture' sx={{flex: 1, width: '600px', height: '450px'}}>
-                <Box component='img' src='/images/switch6.jpg' alt='' sx={{width: '100%', height: '100%', borderRadius: '10px', boxShadow: '1px 1px 3px 4px darkgrey', '&:hover': {border: '1px solid red'}}} />
+                <Box component='img' src='/images/switch6.JPG' alt='' sx={{width: '100%', height: '100%', borderRadius: '10px', boxShadow: '1px 1px 3px 4px darkgrey', '&:hover': {border: '1px solid red'}}} />
             </Box>
 
             <Box component='picture' sx={{flex: 1, width: '600px', height: '450px'}}>

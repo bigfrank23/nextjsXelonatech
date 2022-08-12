@@ -210,7 +210,7 @@ const Navbar = () => {
                             </Link>
                           </ul>
                         </li>
-                        <li className={styles.innerListItemContentRightTechListItem} onMouseEnter={handleNetworkMouseOver}> <h6 className={networkMouseOver ? styles.innerListItemContentRightTechListTitleActive : styles.innerListItemContentRightTechListTitle}>Network Admin/Eng</h6> 
+                        <li className={styles.innerListItemContentRightTechListItem} onMouseEnter={handleNetworkMouseOver}> <h6 className={networkMouseOver ? styles.innerListItemContentRightTechListTitleActive : styles.innerListItemContentRightTechListTitle}>Network Solutions</h6> 
                           <ul className={networkMouseOver ? styles.networkAdministrationListActive : styles.networkAdministrationList}>
                           <Link href="/networkAdmin/NetworkAdmin">
                             <li className={styles.networkAdministrationListItem}>
@@ -226,8 +226,8 @@ const Navbar = () => {
                           </Link>
                           <Link href='/SystemIntegration'>
                             <li className={styles.networkAdministrationListItem}>
-                            <img src="/logoAndIcons/system.png" alt="productIcon" style={{width: "80px", height: "80px", objectFit: "contain", alignSelf: "center"}} />
-                              {/* Infrastructure / System Integration */}
+                            <img src="/logoAndIcons/system.png" alt="productIcon" style={{width: "50px", height: "50px", objectFit: "contain", alignSelf: "center"}} />
+                              Infrastructure & System Integration
                             </li>
                           </Link>
                           <Link href='/StructuredCabling'>
